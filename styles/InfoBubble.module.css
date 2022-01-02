@@ -1,0 +1,16 @@
+.infoContainer {
+  /* CSS VAR */
+  background: #e4f1fa;
+  padding: 32px;
+  width: 550px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.infoWrapper {
+  width: 400px;
+}
