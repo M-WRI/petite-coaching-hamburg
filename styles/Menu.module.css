@@ -1,5 +1,6 @@
 .container {
   position: fixed;
+  z-index: 10;
   top: 0;
   bottom: 0;
   left: 0;
@@ -15,14 +16,6 @@
   right: 32px;
   top: 16px;
   cursor: pointer;
-}
-
-.show {
-  display: block;
-}
-
-.hide {
-  display: none;
 }
 
 .menuListContainer {
