@@ -1,0 +1,49 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headContainer {
+  position: relative;
+  z-index: 2;
+}
+
+.charContainer {
+  display: flex;
+  font-size: 6rem;
+  transform: translateY(100%);
+}
+
+.charWrapper {
+}
+
+.char {
+}
+
+.space {
+  margin: 0 1rem;
+}
+
+.subHead {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 200;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 1.5;
+  transform: translateY(60%);
+}
+
+.image {
+  position: absolute;
+  width: 370px;
+  height: 530px;
+  background: #e3e3e3;
+  border-radius: 200px 200px 0 0;
+}
