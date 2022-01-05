@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { useAnimation, motion } from "framer-motion";
 import Image from "next/image";
@@ -40,10 +40,10 @@ const EarlyIdentification = () => {
       imgTwo.start("imageTwo");
       contBox.start("box");
     }
-  }, [inView]);
+  }, [inView, imgOne, imgTwo, contBox]);
 
   return (
-    <div ref={ref} className={style.container}>
+    <section ref={ref} className={style.container}>
       <motion.div
         className={style.image}
         initial={{ opacity: 0, y: "100%" }}
@@ -76,7 +76,7 @@ const EarlyIdentification = () => {
           variants={animation}
         ></motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 

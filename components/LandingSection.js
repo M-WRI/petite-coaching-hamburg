@@ -34,7 +34,7 @@ const LandingSection = () => {
   };
 
   return (
-    <div className={style.container}>
+    <section className={style.container}>
       <div className={style.headContainer}>
         <h1 className={style.charContainer}>
           {headline.split("").map((char, i) => {
@@ -75,7 +75,7 @@ const LandingSection = () => {
         animate="image"
         variants={landingAnimation}
       ></motion.div>
-    </div>
+    </section>
   );
 };
 

@@ -1,0 +1,54 @@
+.container {
+  position: relative;
+  padding: 32px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  position: relative;
+  z-index: 1;
+  width: 23.5vw;
+  height: 23.5vw;
+  background: #fff;
+}
+
+.button {
+  position: absolute;
+  bottom: 5vw;
+  left: 14vw;
+  width: 300px;
+  height: 350px;
+  border-radius: 0 0 200px 200px;
+  /* VAR CSS */
+  background: #fae0ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.buttonContent {
+  display: flex;
+  flex-direction: column;
+  transform: translateY(80px);
+}
+
+.contentHead {
+  margin: 0;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 2rem;
+}
