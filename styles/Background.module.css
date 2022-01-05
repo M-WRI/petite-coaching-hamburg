@@ -11,9 +11,9 @@
 .bubbleOne {
   opacity: 0.5;
   position: fixed;
-  width: 1060px;
-  height: 1060px;
-  filter: blur(300px);
+  width: 1500px;
+  height: 1500px;
+  filter: blur(100px);
   background: #f9e1ea;
   z-index: 0;
 }
@@ -21,9 +21,9 @@
 .bubbleTwo {
   opacity: 0.5;
   position: fixed;
-  width: 1060px;
-  height: 1060px;
-  filter: blur(300px);
+  width: 1500px;
+  height: 1500px;
+  filter: blur(100px);
   background: #edb296;
   z-index: 0;
 }

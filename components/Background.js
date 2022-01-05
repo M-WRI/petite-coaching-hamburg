@@ -34,7 +34,7 @@ const Background = ({ children }) => {
         "20vh",
         "60vh",
       ],
-      transition: { bounce: 0, ease: "easeOut", duration: 600 },
+      transition: { bounce: 0, ease: "easeOut", duration: 300 },
     },
     bubbleTwo: {
       x: [
@@ -67,7 +67,7 @@ const Background = ({ children }) => {
         "40vh",
         "0vh",
       ],
-      transition: { bounce: 0, ease: "easeOut", duration: 600 },
+      transition: { bounce: 0, ease: "easeOut", duration: 300 },
     },
   };
 
