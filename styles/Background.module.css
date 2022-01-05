@@ -9,7 +9,7 @@
 }
 
 .bubbleOne {
-  opacity: 0.5;
+  opacity: 0.9;
   position: fixed;
   width: 1060px;
   height: 1060px;
@@ -19,7 +19,7 @@
 }
 
 .bubbleTwo {
-  opacity: 0.5;
+  opacity: 0.9;
   position: fixed;
   width: 1060px;
   height: 1060px;
