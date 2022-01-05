@@ -5,67 +5,67 @@ const Background = ({ children }) => {
   const bgAnimation = {
     bubbleOne: {
       x: [
-        "100vw",
-        "80vw",
+        "0vw",
+        "10vw",
         "30vw",
-        "150vw",
-        "35vw",
-        "22vw",
-        "96vw",
-        "76vw",
+        "80vw",
+        "15vw",
+        "40vw",
+        "80vw",
+        "10vw",
         "40vw",
         "3vw",
         "40vw",
-        "123vw",
-        "45vw",
+        "90vw",
+        "60vw",
       ],
       y: [
-        "100vh",
+        "0vh",
+        "40vh",
+        "50vh",
         "80vh",
-        "30vh",
-        "150vh",
-        "35vh",
-        "22vh",
-        "96vh",
-        "76vh",
+        "80vh",
+        "0vh",
+        "10vh",
+        "80vh",
         "40vh",
         "3vh",
         "40vh",
-        "123vh",
-        "45vh",
+        "20vh",
+        "60vh",
       ],
       transition: { bounce: 0, ease: "easeOut", duration: 600 },
     },
     bubbleTwo: {
       x: [
-        "0vw",
-        "80vw",
-        "70vw",
-        "150vw",
-        "35vw",
-        "22vw",
-        "120vw",
-        "76vw",
+        "60vw",
+        "90vw",
         "40vw",
         "3vw",
         "40vw",
-        "70vw",
-        "45vw",
+        "10vw",
+        "80vw",
+        "40vw",
+        "15vw",
+        "80vw",
+        "30vw",
+        "10vw",
+        "0vw",
       ],
       y: [
-        "0vw",
-        "80vw",
-        "70vw",
-        "150vw",
-        "35vw",
-        "22vw",
-        "120vw",
-        "76vw",
-        "40vw",
-        "3vw",
-        "40vw",
-        "70vw",
-        "45vw",
+        "30vh",
+        "40vh",
+        "80vh",
+        "10vh",
+        "40vh",
+        "0vh",
+        "20vh",
+        "80vh",
+        "60vh",
+        "80vh",
+        "50vh",
+        "40vh",
+        "0vh",
       ],
       transition: { bounce: 0, ease: "easeOut", duration: 600 },
     },
@@ -74,18 +74,18 @@ const Background = ({ children }) => {
   return (
     <>
       <div className={style.container}>
-        {/* <motion.div
+        <motion.div
           className={style.bubbleOne}
-          initial={{ x: "100vw", y: "100vh" }}
+          initial={{ x: "0vw", y: "0vh" }}
           animate="bubbleOne"
           variants={bgAnimation}
         ></motion.div>
         <motion.div
           className={style.bubbleTwo}
-          initial={{ x: 0, y: 0 }}
+          initial={{ x: "60vw", y: "30vh" }}
           animate="bubbleTwo"
           variants={bgAnimation}
-        ></motion.div> */}
+        ></motion.div>
       </div>
       {children}
     </>

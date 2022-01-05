@@ -9,17 +9,21 @@
 }
 
 .bubbleOne {
+  opacity: 0.5;
   position: fixed;
-  width: 60px;
-  height: 60px;
-  background: blue;
+  width: 1060px;
+  height: 1060px;
+  filter: blur(300px);
+  background: #f9e1ea;
   z-index: 0;
 }
 
 .bubbleTwo {
+  opacity: 0.5;
   position: fixed;
-  width: 60px;
-  height: 60px;
-  background: red;
+  width: 1060px;
+  height: 1060px;
+  filter: blur(300px);
+  background: #edb296;
   z-index: 0;
 }
