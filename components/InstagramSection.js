@@ -23,7 +23,7 @@ const InstagramSection = () => {
 
     instaButton: {
       opacity: 1,
-      y: 0,
+      y: "-40%",
       transition: {
         delay: 0.8,
         duration: 0.5,

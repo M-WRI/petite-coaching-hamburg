@@ -20,9 +20,6 @@
   margin-bottom: 128px;
 }
 
-.char {
-}
-
 .space {
   margin: 0 1rem;
 }
@@ -49,6 +46,19 @@
 
 @media (max-width: 960px) {
   .charContainer {
-    font-size: 11vw;
+    font-size: 10vw;
+  }
+
+  .charContainer {
+    margin-bottom: 12vw;
+  }
+
+  .subHead {
+    font-size: 3.33333vw;
+  }
+
+  .image {
+    width: 38.543vw;
+    height: 59.375vw;
   }
 }

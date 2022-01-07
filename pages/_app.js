@@ -28,7 +28,9 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Background>
         <Navbar />
-        <Component {...pageProps} />
+        <main style={{ position: "relative", zIndex: 1 }}>
+          <Component {...pageProps} />
+        </main>
       </Background>
     </>
   );

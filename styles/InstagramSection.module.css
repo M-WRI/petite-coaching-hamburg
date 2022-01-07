@@ -1,35 +1,34 @@
 .container {
-  position: relative;
-  padding: 32px;
-  width: 100vw;
+  /* width: 100vw; */
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
 }
 
 .feedContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1vw;
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  transform: translateY(-60%);
+  display: flex;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
+  width: 100%;
 }
 
 .image {
   position: relative;
   z-index: 1;
-  width: 23.5vw;
-  height: 23.5vw;
+  width: 24vw;
+  height: 24vw;
   background: #fff;
 }
 
 .button {
   position: absolute;
-  bottom: 5vw;
+  top: 65%;
   left: 14vw;
-  width: 300px;
-  height: 350px;
+  width: 25vw;
+  height: 30vw;
   border-radius: 0 0 200px 200px;
   /* VAR CSS */
   background: #fae0ea;
@@ -53,13 +52,26 @@
   font-size: 2rem;
 }
 
-@media (max-width: 768px) {
-  .feedContainer {
-    grid-template-columns: repeat(2, 1fr);
+@media (max-width: 960px) {
+  .container {
+    width: 100vw;
+    height: unset;
+    position: relative;
   }
 
-  .image {
-    width: 40vw;
-    height: 40vw;
+  .feedContainer {
+    position: relative;
+    flex-wrap: wrap;
+    transform: translateY(0%);
   }
+
+  .button {
+    position: relative;
+  }
+
+  /* .image {
+    width: 49%;
+    height: 30vw;
+    margin: 0.5vw;
+  } */
 }
