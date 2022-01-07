@@ -98,6 +98,10 @@
 }
 
 @media (max-width: 425px) {
+  .container {
+    height: 100vh;
+  }
+
   .contentImage {
     display: none;
   }
