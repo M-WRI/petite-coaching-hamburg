@@ -55,17 +55,15 @@ const LandingSection = () => {
         <span className={style.subHead}>
           {/* doublespace breaks the line */}
           {subHead.split("  ").map((item, i) => (
-            <>
-              <motion.span
-                key={i}
-                custom={i}
-                initial={{ opacity: 0 }}
-                animate="subHead"
-                variants={landingAnimation}
-              >
-                {item}
-              </motion.span>
-            </>
+            <motion.span
+              key={i}
+              custom={i}
+              initial={{ opacity: 0 }}
+              animate="subHead"
+              variants={landingAnimation}
+            >
+              {item}
+            </motion.span>
           ))}
         </span>
       </div>

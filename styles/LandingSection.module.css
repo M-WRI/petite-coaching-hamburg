@@ -16,9 +16,8 @@
   display: flex;
   font-size: 6rem;
   transform: translateY(100%);
-}
-
-.charWrapper {
+  font-family: "Callingstone", Times, serif;
+  margin-bottom: 128px;
 }
 
 .char {
@@ -46,4 +45,10 @@
   height: 530px;
   background: #e3e3e3;
   border-radius: 200px 200px 0 0;
+}
+
+@media (max-width: 960px) {
+  .charContainer {
+    font-size: 11vw;
+  }
 }

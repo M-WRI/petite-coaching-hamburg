@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Callingstone";
+  src: url("/fonts/Callingstone/Callingstone.woff2") format("woff2"),
+    url("/fonts/Callingstone/Callingstone.woff") format("woff"),
+    url("/fonts/Callingstone/Callingstone.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
   padding: 0;

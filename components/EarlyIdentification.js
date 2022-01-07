@@ -49,7 +49,16 @@ const EarlyIdentification = () => {
         initial={{ opacity: 0, y: "100%" }}
         animate={imgOne}
         variants={animation}
-      ></motion.div>
+      >
+        <Image
+          src="/images/start-frühförderung-1.jpg"
+          alt="Frühförderung"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="65%"
+          priority={true}
+        />
+      </motion.div>
       <div className={style.contentContainer}>
         <motion.div
           className={style.contentInformation}
@@ -74,7 +83,15 @@ const EarlyIdentification = () => {
           initial={{ opacity: 0, y: "100%" }}
           animate={imgTwo}
           variants={animation}
-        ></motion.div>
+        >
+          <Image
+            src="/images/start-frühförderung-2.jpg"
+            alt="Frühförderung"
+            layout="fill"
+            objectFit="cover"
+            priority={true}
+          />
+        </motion.div>
       </div>
     </section>
   );
