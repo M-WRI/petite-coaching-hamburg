@@ -35,7 +35,7 @@ const LinkBox = ({ img, slug, title }) => {
           initial={{ opacity: 0, y: "100%" }}
           variants={animation}
           animate={animationControl}
-          priority={true}
+          priority="true"
         >
           <div className={style.overlay}></div>
           <Image src={img} alt={title} layout="fill" objectFit="cover" />
