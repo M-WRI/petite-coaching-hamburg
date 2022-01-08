@@ -1,0 +1,54 @@
+.container {
+  justify-content: center;
+  align-items: center;
+  background: lightgray;
+  position: relative;
+  height: 300px;
+  margin-right: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.link {
+  flex: 1;
+}
+
+.overlay {
+  position: absolute;
+  opacity: 0.3;
+  z-index: 1;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.title {
+  position: relative;
+  z-index: 2;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 960px) {
+  .container {
+    flex: unset;
+    margin-right: unset;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 485px) {
+  .link {
+    flex: unset;
+    width: 100%;
+  }
+
+  .container {
+    flex: unset;
+    margin-right: unset;
+    margin: 8px 0;
+  }
+}

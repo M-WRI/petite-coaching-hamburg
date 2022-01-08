@@ -1,7 +1,18 @@
 // style
 import style from "../styles/ExpertiseSection.module.css";
+import LinkBox from "./LinkBox";
 
 const ExpertiseSection = () => {
+  const data = [
+    {
+      id: 1,
+      title: "Familiencoaching",
+      slug: "#",
+      img: "/images/familiencoaching-1.jpg",
+    },
+    { id: 2, title: "Babykurse", slug: "#", img: "/images/babykurse-1.jpg" },
+  ];
+
   return (
     <section className={style.container}>
       <div className={style.contentContainer}>
@@ -13,12 +24,14 @@ const ExpertiseSection = () => {
           lerne täglich dazu.
         </p>
       </div>
-      <div className={style.testBox}>
-        <h1>hi</h1>
-      </div>
-      <div className={style.testBox}>
-        <h1>hi</h1>
-      </div>
+      {data.map((link) => (
+        <LinkBox
+          key={link.id}
+          title={link.title}
+          slug={link.slug}
+          img={link.img}
+        />
+      ))}
     </section>
   );
 };
