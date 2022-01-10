@@ -20,7 +20,7 @@
 .contentContainer {
   flex: 1;
   height: 400px;
-  background-color: #f7d3c7;
+  background-color: var(--bg-orange);
   display: flex;
   flex-direction: column;
   justify-content: center;

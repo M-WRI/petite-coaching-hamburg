@@ -1,5 +1,4 @@
 // components
-import { useEffect } from "react";
 import EarlyIdentification from "../components/EarlyIdentification";
 import ExpertiseSection from "../components/ExpertiseSection";
 import InstagramSection from "../components/InstagramSection";
@@ -11,7 +10,7 @@ export default function Home() {
       <LandingSection />
       <EarlyIdentification />
       <ExpertiseSection />
-      {/* <InstagramSection /> */}
+      <InstagramSection />
     </>
   );
 }

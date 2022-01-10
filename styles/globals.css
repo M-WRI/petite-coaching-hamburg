@@ -1,3 +1,8 @@
+:root {
+  --bg-blue: #a3b1c0;
+  --bg-orange: #f7d3c7;
+}
+
 @font-face {
   font-family: "Callingstone";
   src: url("/fonts/Callingstone/Callingstone.woff2") format("woff2"),

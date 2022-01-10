@@ -25,7 +25,7 @@
   z-index: 1;
   width: 30vw;
   height: 30vw;
-  background: #a3b1c0;
+  background: var(--bg-blue);
   display: flex;
   flex-direction: column;
   justify-content: center;
