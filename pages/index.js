@@ -1,4 +1,5 @@
 // components
+import AboutMe from "../components/AboutMe";
 import EarlyIdentification from "../components/EarlyIdentification";
 import ExpertiseSection from "../components/ExpertiseSection";
 import InstagramSection from "../components/InstagramSection";
@@ -11,6 +12,7 @@ export default function Home() {
       <EarlyIdentification />
       <ExpertiseSection />
       <InstagramSection />
+      <AboutMe />
     </>
   );
 }

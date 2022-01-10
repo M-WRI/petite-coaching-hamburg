@@ -8,6 +8,7 @@
   grid-gap: 16px;
   position: relative;
   z-index: 1;
+  margin-bottom: 20vw;
 }
 
 .image {
@@ -45,13 +46,14 @@
 
 @media (max-width: 960px) {
   .imageContainer {
-    /* margin: 20vw 0; */
+    margin-bottom: 20vw;
   }
 }
 
 @media (max-width: 768px) {
   .imageContainer {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 30vw;
   }
 
   .contentContainer {
@@ -63,6 +65,10 @@
 }
 
 @media (max-width: 485px) {
+  .imageContainer {
+    margin-bottom: 35vw;
+  }
+
   .contentContainer {
     top: 85%;
     height: 50vw;
