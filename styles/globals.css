@@ -32,7 +32,7 @@ a {
 
 @media (max-width: 960px) {
   main {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding: 0 1rem;
   }
 }
