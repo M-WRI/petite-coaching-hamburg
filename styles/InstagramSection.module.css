@@ -44,6 +44,15 @@
   width: 100% !important;
 }
 
+@media (min-width: 1280px) {
+  .contentContainer {
+    background: var(--bg-blue);
+    display: inline-block;
+    padding: 64px;
+    width: 384px;
+  }
+}
+
 @media (max-width: 960px) {
   .imageContainer {
     margin-bottom: 20vw;

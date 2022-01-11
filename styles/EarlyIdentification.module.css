@@ -58,6 +58,27 @@
   background: #e3e3e3;
 }
 
+@media (min-width: 1280px) {
+  .container {
+    width: 100%;
+  }
+
+  .image {
+    width: 50%;
+    height: 100%;
+  }
+
+  .contentInformation {
+    width: 384px;
+    height: 384px;
+  }
+
+  .contentImage {
+    width: 384px;
+    height: 384px;
+  }
+}
+
 @media (max-width: 960px) {
   .container {
     width: 100%;
