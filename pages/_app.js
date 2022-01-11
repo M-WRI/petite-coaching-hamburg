@@ -8,6 +8,14 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charSet="utf-8" />
+        <meta
+          name="keywords"
+          content="frühförderung, familiencoaching, babykurse, teresa jäger, baby, kleinkind"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Moritz Wright" />
         <link
           rel="preload"
           href="/fonts/Callingstone/Callingstone.ttf"
@@ -29,7 +37,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Background>
         <Navbar />
-        <main style={{ position: "relative", zIndex: 1 }}>
+        <main>
           <Component {...pageProps} />
         </main>
         <Footer />
