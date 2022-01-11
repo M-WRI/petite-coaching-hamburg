@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Background from "../components/Background";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 
@@ -31,6 +32,7 @@ function MyApp({ Component, pageProps }) {
         <main style={{ position: "relative", zIndex: 1 }}>
           <Component {...pageProps} />
         </main>
+        <Footer />
       </Background>
     </>
   );

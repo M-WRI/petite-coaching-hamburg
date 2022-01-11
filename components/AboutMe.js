@@ -3,7 +3,7 @@ import style from "../styles/AboutMe.module.css";
 
 const AboutMe = () => {
   return (
-    <div className={style.container}>
+    <section className={style.container}>
       <div className={style.contentContainer}>
         <h1 className={style.headline}>Teresa Jäger</h1>
         <div className={style.contentWrapper}>
@@ -16,7 +16,7 @@ const AboutMe = () => {
       <div className={style.imageContainer}>
         <div className={style.image}></div>
       </div>
-    </div>
+    </section>
   );
 };
 
