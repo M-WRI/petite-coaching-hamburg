@@ -8,11 +8,11 @@ import LandingSection from "../components/LandingSection";
 export default function Home() {
   return (
     <>
-      {/* <LandingSection />
+      <LandingSection />
       <EarlyIdentification />
       <ExpertiseSection />
       <InstagramSection />
-      <AboutMe /> */}
+      <AboutMe />
     </>
   );
 }

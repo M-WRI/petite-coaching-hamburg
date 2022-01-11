@@ -41,15 +41,19 @@ const Footer = () => {
               <input type="text" placeholder="Vorname" />
               <input type="text" placeholder="Nachname" />
             </div>
-            <div>
-              <div>
+            <div className={style.name}>
+              <input type="text" placeholder="Email" />
+              <input type="text" placeholder="Telefon" />
+            </div>
+            <div className={style.inputContainer}>
+              <div className={style.select}>
                 <input type="radio" value="Male" name="service" /> Frühförderung
               </div>
-              <div>
+              <div className={style.select}>
                 <input type="radio" value="Male" name="service" />{" "}
                 Familiencoaching
               </div>
-              <div>
+              <div className={style.select}>
                 <input type="radio" value="Male" name="service" /> Babykurse
               </div>
             </div>
@@ -58,7 +62,9 @@ const Footer = () => {
               rows="10"
               placeholder="Nachricht..."
             ></textarea>
-            <button type="submit">Senden</button>
+            <button className={style.button} type="submit">
+              Senden
+            </button>
           </form>
         </div>
       </div>
