@@ -74,7 +74,7 @@ const Background = ({ children }) => {
   return (
     <>
       <div className={style.container}>
-        <motion.div
+        {/* <motion.div
           className={style.bubbleOne}
           initial={{ x: "0vw", y: "0vh" }}
           animate="bubbleOne"
@@ -85,7 +85,7 @@ const Background = ({ children }) => {
           initial={{ x: "60vw", y: "30vh" }}
           animate="bubbleTwo"
           variants={bgAnimation}
-        ></motion.div>
+        ></motion.div> */}
       </div>
       {children}
     </>

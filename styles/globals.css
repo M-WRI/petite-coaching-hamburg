@@ -1,8 +1,3 @@
-:root {
-  --bg-blue: #a3b1c0;
-  --bg-orange: #f7d3c7;
-}
-
 @font-face {
   font-family: "Callingstone";
   src: url("/fonts/Callingstone/Callingstone.woff2") format("woff2"),
@@ -11,6 +6,20 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+}
+
+:root {
+  /* Fonts */
+  --primary-headline: "Callingstone";
+  --secondary-headline: "Callingstone";
+  /* Font Sizes */
+  --primary-headline-size: 6rem;
+  --secondary-headline-size: 4rem;
+  --info-headline: 2rem;
+  --text-size: 1rem;
+  /* Colors */
+  --bg-blue: #a3b1c0;
+  --bg-orange: #f7d3c7;
 }
 
 html,
