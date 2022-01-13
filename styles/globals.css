@@ -52,3 +52,11 @@ a {
     padding: 0 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  :root {
+    /* Font Sizes */
+    --primary-headline-size: 12vw;
+    --secondary-headline-size: 10vw;
+  }
+}

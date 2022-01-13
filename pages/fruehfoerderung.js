@@ -1,7 +1,9 @@
+import InfoBox from "../components/utils/InfoBox";
+
 const fruehfoerderung = () => {
   return (
     <div>
-      <h1>Haaaaallo</h1>
+      <InfoBox />
     </div>
   );
 };

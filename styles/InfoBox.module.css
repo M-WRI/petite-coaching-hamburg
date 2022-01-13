@@ -1,0 +1,14 @@
+.headWrapper,
+.textWrapper {
+  text-align: center;
+}
+
+.headWrapper {
+  text-align: center;
+  margin-bottom: -3rem;
+}
+
+.textWrapper {
+  padding: 2.5rem;
+  border-radius: 200px;
+}

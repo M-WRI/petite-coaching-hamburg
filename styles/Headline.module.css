@@ -1,0 +1,12 @@
+.secondaryHead,
+.primaryHead {
+  margin: 0;
+}
+
+.primaryHead {
+  font-family: var(--primary-headline);
+}
+.secondaryHead {
+  font-family: var(--secondary-headline);
+  font-size: var(--secondary-headline-size);
+}
