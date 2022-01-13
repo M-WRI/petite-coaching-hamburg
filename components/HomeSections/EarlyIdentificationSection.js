@@ -4,7 +4,7 @@ import { useAnimation, motion } from "framer-motion";
 import Image from "next/image";
 
 // style
-import style from "../styles/EarlyIdentification.module.css";
+import style from "../../styles/EarlyIdentification.module.css";
 
 const EarlyIdentification = () => {
   const { ref, inView } = useInView({

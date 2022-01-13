@@ -1,5 +1,5 @@
 // style
-import style from "../styles/AboutMe.module.css";
+import style from "../../styles/AboutMe.module.css";
 
 const AboutMe = () => {
   return (

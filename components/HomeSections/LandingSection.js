@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 // style
-import style from "../styles/LandingSection.module.css";
+import style from "../../styles/LandingSection.module.css";
 
 const LandingSection = () => {
   const headline = "Petite Coaching";

@@ -1,6 +1,6 @@
 // style
-import style from "../styles/ExpertiseSection.module.css";
-import LinkBox from "./LinkBox";
+import style from "../../styles/ExpertiseSection.module.css";
+import LinkBox from "../LinkBox";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
