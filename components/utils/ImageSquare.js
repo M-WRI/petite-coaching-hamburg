@@ -30,7 +30,8 @@ const ImageSquare = ({ src, alt, type, pos = 50 }) => {
   }, [inView, animationControll]);
 
   return (
-    <div style={{ height: "100%" }} ref={ref}>
+    <>
+      <div ref={ref} />
       <motion.div
         className={type}
         initial={{ opacity: 0, y: "100%" }}
@@ -46,7 +47,7 @@ const ImageSquare = ({ src, alt, type, pos = 50 }) => {
           objectPosition={`${pos}%`}
         />
       </motion.div>
-    </div>
+    </>
   );
 };
 
