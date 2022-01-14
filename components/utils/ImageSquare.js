@@ -3,9 +3,6 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
-// style
-import style from "../../styles/ImageSquare.module.css";
-
 const ImageSquare = ({ src, alt, type, pos = 50 }) => {
   const { ref, inView } = useInView({
     threshold: 0.4,
@@ -31,7 +28,7 @@ const ImageSquare = ({ src, alt, type, pos = 50 }) => {
 
   return (
     <>
-      <div ref={ref} />
+      <div ref={ref} style={{ position: "absolute", top: "50px" }} />
       <motion.div
         className={type}
         initial={{ opacity: 0, y: "100%" }}
@@ -42,7 +39,7 @@ const ImageSquare = ({ src, alt, type, pos = 50 }) => {
           src={src}
           alt={alt}
           layout="fill"
-          property="true"
+          priority="true"
           objectFit="cover"
           objectPosition={`${pos}%`}
         />
