@@ -1,6 +1,6 @@
-// style
-import style from "../../styles/AboutMe.module.css";
 import InfoBox from "../utils/InfoBox";
+
+// style
 
 const AboutMe = () => {
   const data = {
@@ -9,12 +9,12 @@ const AboutMe = () => {
   };
 
   return (
-    <section className={style.container}>
-      <div className={style.infoBoxContainer}>
+    <section className="about-container">
+      <div className="info-box-container">
         <InfoBox title={data.title} text={data.text} />
       </div>
-      <div className={style.imageContainer}>
-        <div className={style.image}></div>
+      <div className="image-container">
+        <div className="image"></div>
       </div>
     </section>
   );

@@ -1,12 +1,41 @@
 .secondaryHead,
 .primaryHead {
   margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .primaryHead {
   font-family: var(--primary-headline);
+  font-size: var(--primary-headline-size);
+  margin-bottom: 128px;
+  transform: translateY(100%);
 }
+
+.subHead {
+  font-family: var(--sub-headline);
+  font-size: var(--sub-headline-size);
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  text-align: right;
+  font-weight: 200;
+  width: 100%;
+  line-height: 1.5;
+  transform: translateY(60%);
+}
+
 .secondaryHead {
   font-family: var(--secondary-headline);
   font-size: var(--secondary-headline-size);
+}
+
+.space {
+  margin: 0 1rem;
+}
+
+@media (max-width: 960px) {
+  .primaryHead {
+    margin-bottom: 12vw;
+  }
 }
