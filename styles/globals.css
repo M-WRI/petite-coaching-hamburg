@@ -132,26 +132,14 @@ a {
 }
 
 .head-container {
+  transform: translateY(20%);
   position: relative;
   z-index: 1;
-}
-
-.image-landing {
-  position: absolute;
-  width: 370px;
-  height: 530px;
-  background: #e3e3e3;
-  border-radius: 200px 200px 0 0;
 }
 
 @media (max-width: 960px) {
   .landing-container {
     width: 100%;
-  }
-
-  .image-landing {
-    width: 38.543vw;
-    height: 59.375vw;
   }
 }
 

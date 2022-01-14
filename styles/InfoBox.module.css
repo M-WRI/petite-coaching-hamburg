@@ -6,6 +6,8 @@
 .headWrapper {
   text-align: center;
   margin-bottom: -3rem;
+  position: relative;
+  z-index: 2;
 }
 
 .textWrapper {

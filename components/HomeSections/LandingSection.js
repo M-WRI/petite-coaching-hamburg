@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import CoverImage from "../utils/CoverImage";
 
 // style
 import Headline from "../utils/Headline";
@@ -7,15 +7,9 @@ const LandingSection = () => {
   const headline = "Petite Coaching";
   const subHead = "Ein erfülltes  Familienleben";
 
-  const landingAnimation = {
-    image: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.3,
-        duration: 0.5,
-      },
-    },
+  const image = {
+    src: "/images/petite-coaching-landing-image.jpg",
+    alt: "petite coaching frühförderung familien coaching babykurse in hamburg",
   };
 
   return (
@@ -23,12 +17,7 @@ const LandingSection = () => {
       <div className="head-container">
         <Headline subHead={subHead}>{headline}</Headline>
       </div>
-      <motion.div
-        className="image-landing"
-        initial={{ opacity: 0, y: "50%" }}
-        animate="image"
-        variants={landingAnimation}
-      ></motion.div>
+      <CoverImage src={image.src} alt={image.alt} overlay={true} pos={40} />
     </section>
   );
 };
