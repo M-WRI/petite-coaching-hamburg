@@ -1,68 +1,50 @@
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { useAnimation, motion } from "framer-motion";
-import Image from "next/image";
-
-// style
-import style from "../../styles/EarlyIdentification.module.css";
+import ImageSquare from "../utils/ImageSquare";
+import InfoBoxSquare from "../utils/InfoBoxSquare";
 
 const EarlyIdentification = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.8,
-  });
-
-  const animation = {
+  const data = {
     imageOne: {
-      opacity: 1,
-      y: "0%",
-      transition: { bounce: 0, ease: "easeOut", duration: 0.5 },
+      src: "/images/start-frühförderung-1.jpg",
+      alt: "teresa jäger frühförderung hamburg",
+      type: "early-image-one",
     },
-
     imageTwo: {
-      opacity: 1,
-      y: "0%",
-      transition: { bounce: 0, ease: "easeOut", duration: 0.5, delay: 0.3 },
+      src: "/images/start-frühförderung-2.jpg",
+      alt: "teresa jäger frühförderung hamburg",
+      type: "early-image-two",
     },
-
-    box: {
-      opacity: 1,
-      transition: { bounce: 0, ease: "easeOut", duration: 0.5, delay: 0.7 },
+    infoBox: {
+      title: "Frühförderung",
+      text: "Jedes Kind entwickelt sich einzigartig. Wir entwickeln eine einzigartige Förderung",
     },
   };
 
-  const imgOne = useAnimation();
-  const imgTwo = useAnimation();
-  const contBox = useAnimation();
-
-  useEffect(() => {
-    if (inView) {
-      imgOne.start("imageOne");
-      imgTwo.start("imageTwo");
-      contBox.start("box");
-    }
-  }, [inView, imgOne, imgTwo, contBox]);
-
   return (
-    <section ref={ref} className={style.container}>
-      <motion.div
-        className={style.image}
-        initial={{ opacity: 0, y: "100%" }}
-        animate={imgOne}
-        variants={animation}
-      >
-        <Image
-          src="/images/start-frühförderung-1.jpg"
-          alt="Frühförderung"
-          layout="fill"
-          objectFit="cover"
-          objectPosition="65%"
-          priority={true}
+    <section className="early-container">
+      <ImageSquare
+        src={data.imageOne.src}
+        alt={data.imageOne.alt}
+        type={data.imageOne.type}
+        pos={65}
+      />
+      <div className="early-content-box">
+        <div className="early-infobox">
+          <InfoBoxSquare
+            color="blue"
+            title={data.infoBox.title}
+            text={data.infoBox.text}
+          />
+        </div>
+        <ImageSquare
+          src={data.imageTwo.src}
+          alt={data.imageTwo.alt}
+          type={data.imageTwo.type}
         />
-      </motion.div>
-      <div className={style.contentContainer}>
+      </div>
+      {/* <div className={style.contentContainer}>
         <motion.div
           className={style.contentInformation}
-          initial={{ opacity: 0 }}
+          // initial={{ opacity: 0 }}
           animate={contBox}
           variants={animation}
         >
@@ -80,7 +62,7 @@ const EarlyIdentification = () => {
         </motion.div>
         <motion.div
           className={style.contentImage}
-          initial={{ opacity: 0, y: "100%" }}
+          // initial={{ opacity: 0, y: "100%" }}
           animate={imgTwo}
           variants={animation}
         >
@@ -92,7 +74,7 @@ const EarlyIdentification = () => {
             priority={true}
           />
         </motion.div>
-      </div>
+      </div> */}
     </section>
   );
 };

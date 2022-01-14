@@ -16,7 +16,7 @@ const InfoBox = ({ color = "orange", title = "", text = "" }) => {
           background: color === "orange" ? "#F7D3C7" : "#A3B1C0",
         }}
       >
-        <Text>{text}</Text>
+        <Text center={true}>{text}</Text>
       </div>
     </div>
   );
