@@ -328,6 +328,7 @@ a {
 
 @media (max-width: 1110px) {
   .early-identification-container {
+    margin-top: 128px;
     flex-direction: column;
   }
   .early-identification-image-one {
@@ -360,8 +361,8 @@ a {
 }
 
 /* EALRY IDENTIFICATION INFO SECTION */
+
 .ealry-info-section-container {
-  margin-top: 128px;
   max-width: 850px;
   margin: 0 auto;
 }
