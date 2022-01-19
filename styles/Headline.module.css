@@ -6,7 +6,7 @@
 }
 
 .primaryHead {
-  font-family: var(--primary-headline);
+  font-family: var(--primary-headline) !important;
   font-size: var(--primary-headline-size);
   margin-bottom: 128px;
   transform: translateY(100%);
