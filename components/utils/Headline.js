@@ -5,7 +5,12 @@ import { useEffect } from "react";
 // style
 import style from "../../styles/Headline.module.css";
 
-const Headline = ({ children, primary = true, subHead = "" }) => {
+const Headline = ({
+  children,
+  primary = true,
+  subHead = "",
+  wordbreak = false,
+}) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
@@ -68,19 +73,35 @@ const Headline = ({ children, primary = true, subHead = "" }) => {
           )}
         </>
       ) : (
-        <h2 ref={ref} className={style.secondaryHead}>
-          {children.split("").map((char, i) => (
-            <motion.span
-              key={i}
-              custom={i}
-              initial={{ opacity: 0, y: "50%" }}
-              animate={animationControl}
-              variants={animation}
-              className={style.char}
-            >
-              {char === " " ? <span className={style.space}></span> : char}
-            </motion.span>
-          ))}
+        <h2
+          ref={ref}
+          className={wordbreak ? style.secondaryHeadBreak : style.secondaryHead}
+        >
+          {wordbreak
+            ? children.split("  ").map((char, i) => (
+                <motion.span
+                  key={i}
+                  custom={i}
+                  initial={{ opacity: 0, y: "50%" }}
+                  animate={animationControl}
+                  variants={animation}
+                  className={style.char}
+                >
+                  {char === " " ? <span className={style.space}></span> : char}
+                </motion.span>
+              ))
+            : children.split("").map((char, i) => (
+                <motion.span
+                  key={i}
+                  custom={i}
+                  initial={{ opacity: 0, y: "50%" }}
+                  animate={animationControl}
+                  variants={animation}
+                  className={style.char}
+                >
+                  {char === " " ? <span className={style.space}></span> : char}
+                </motion.span>
+              ))}
         </h2>
       )}
     </>

@@ -4,9 +4,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const ImageSquare = ({ src, alt, type, pos = 50 }) => {
-  const { ref, inView } = useInView({
-    threshold: 0.4,
-  });
+  const { ref, inView } = useInView();
 
   const animation = {
     image: {
@@ -28,10 +26,10 @@ const ImageSquare = ({ src, alt, type, pos = 50 }) => {
 
   return (
     <>
-      <div ref={ref} style={{ position: "absolute", top: "50px" }} />
       <motion.div
+        ref={ref}
         className={type}
-        initial={{ opacity: 0, y: "100%" }}
+        initial={{ opacity: 0, y: "50%" }}
         animate={animationControll}
         variants={animation}
       >

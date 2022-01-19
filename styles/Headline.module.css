@@ -30,6 +30,15 @@
   font-size: var(--secondary-headline-size);
 }
 
+.secondaryHeadBreak {
+  font-family: var(--secondary-headline);
+  font-size: var(--secondary-headline-size);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: -2rem;
+}
+
 .space {
   margin: 0 1rem;
 }

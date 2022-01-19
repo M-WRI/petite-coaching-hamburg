@@ -8,7 +8,7 @@ import Text from "./Text";
 // style
 import style from "../../styles/InfoBox.module.css";
 
-const InfoBox = ({ color = "orange", title = "", text = "" }) => {
+const InfoBox = ({ color = "orange", title = "", text = "", wordbreak }) => {
   const { ref, inView } = useInView({
     threshold: 0.4,
   });
@@ -30,7 +30,9 @@ const InfoBox = ({ color = "orange", title = "", text = "" }) => {
   return (
     <div ref={ref}>
       <div className={style.headWrapper}>
-        <Headline primary={false}>{title}</Headline>
+        <Headline primary={false} wordbreak={wordbreak}>
+          {title}
+        </Headline>
       </div>
       <motion.div
         className={style.textWrapper}

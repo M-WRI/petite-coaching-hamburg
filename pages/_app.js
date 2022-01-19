@@ -36,11 +36,11 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <Background>
-        {/* <Navbar /> */}
+        <Navbar />
         <main>
           <Component {...pageProps} />
         </main>
-        {/* <Footer /> */}
+        <Footer />
       </Background>
     </>
   );
