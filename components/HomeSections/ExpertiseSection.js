@@ -1,7 +1,7 @@
 import InfoBoxSquare from "../utils/InfoBoxSquare";
 
 // style
-import LinkBox from "../LinkBox";
+import LinkBox from "../utils/LinkBox";
 
 const ExpertiseSection = () => {
   const data = {

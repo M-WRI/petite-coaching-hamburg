@@ -27,8 +27,34 @@
 
 .menuList {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.overflow {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
 }
 
 .menuListItem {
   margin: 15px 0;
+  font-family: var(--primary-headline);
+  font-size: 3.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.line {
+  height: 40px;
+  width: 0%;
+  background: var(--bg-orange);
+  position: absolute;
+  bottom: 15px;
+  transition: width 0.2s;
+}
+
+.overflow:hover > .line {
+  width: 100%;
+  transition: 0.2s;
 }

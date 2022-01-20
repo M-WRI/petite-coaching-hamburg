@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 // style
-import style from "../styles/LinkBox.module.css";
+import style from "../../styles/LinkBox.module.css";
 
 const LinkBox = ({ img, slug, title }) => {
   const { ref, inView } = useInView();

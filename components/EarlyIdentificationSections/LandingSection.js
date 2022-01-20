@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Headline from "../utils/Headline";
 import ImageSquare from "../utils/ImageSquare";
 import Text from "../utils/Text";
