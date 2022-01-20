@@ -58,3 +58,9 @@
   width: 100%;
   transition: 0.2s;
 }
+
+@media (max-width: 920px) {
+  .menuListItem {
+    font-size: 6vw;
+  }
+}

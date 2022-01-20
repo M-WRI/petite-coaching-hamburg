@@ -9,10 +9,10 @@ const ExpertiseSection = () => {
       {
         id: 1,
         title: "Familiencoaching",
-        slug: "#",
+        slug: "/familiencoaching",
         img: "/images/familiencoaching-1.jpg",
       },
-      { id: 2, title: "Babykurse", slug: "#", img: "/images/babykurse-1.jpg" },
+      // { id: 2, title: "Babykurse", slug: "#", img: "/images/babykurse-1.jpg" },
     ],
     info: {
       title: "Meine Expertise",

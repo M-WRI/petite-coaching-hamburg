@@ -41,8 +41,6 @@ const Menu = ({ handleMenu, showMenu }) => {
     }),
   };
 
-  console.log(showMenu, "<----");
-
   return (
     <motion.div
       className={`${style.container}`}
@@ -69,7 +67,7 @@ const Menu = ({ handleMenu, showMenu }) => {
                     >
                       {item.title}
                     </motion.li>
-                    <div className={showMenu && style.line}></div>
+                    {showMenu && <div className={style.line}></div>}
                   </div>
                 </a>
               </Link>

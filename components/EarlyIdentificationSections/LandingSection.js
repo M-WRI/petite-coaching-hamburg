@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Headline from "../utils/Headline";
 import ImageSquare from "../utils/ImageSquare";
 import Text from "../utils/Text";
@@ -24,6 +23,7 @@ const LandingSection = () => {
         src={data.imageOne.src}
         alt={data.imageOne.alt}
         type={data.imageOne.type}
+        pos={65}
       />
       <div className="early-identification-landing-content">
         <Headline primary={false}>Frühförderung</Headline>

@@ -316,14 +316,14 @@ a {
 }
 .early-identification-image-one {
   height: 60vh;
-  padding: 2rem;
   flex: 1;
+  position: relative;
 }
 
 .early-identification-landing-content {
-  padding: 2rem;
   flex: 1;
   position: relative;
+  padding-left: 2rem;
 }
 
 @media (max-width: 1110px) {
@@ -384,6 +384,7 @@ a {
   width: 50%;
   height: 80vh;
   justify-self: flex-end;
+  position: relative;
 }
 
 @media (max-width: 960px) {

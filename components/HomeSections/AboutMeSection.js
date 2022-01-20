@@ -11,7 +11,7 @@ const AboutMe = () => {
 
   const image = {
     src: "/images/petite-coaching-about-me-image.jpg",
-    alt: "petite coaching teresa jäger sozialpä",
+    alt: "petite coaching teresa jäger sozialpädagogin",
   };
 
   return (
