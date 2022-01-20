@@ -342,6 +342,7 @@ a {
     align-self: flex-end;
     max-width: 800px;
     flex: unset;
+    padding-left: unset;
   }
 }
 

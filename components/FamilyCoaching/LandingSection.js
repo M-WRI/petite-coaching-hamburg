@@ -1,13 +1,12 @@
-// import Image from "next/image";
 import Headline from "../utils/Headline";
 import ImageSquare from "../utils/ImageSquare";
 import Text from "../utils/Text";
 
 const LandingSection = () => {
   const data = {
-    title: "Früförderung",
+    title: "Familiencoaching",
     introText:
-      "Frühförderung von Anfang an – denn die ersten Lebensjahre Ihres Kindes sind entscheidend für Entwicklung, Wohlbefinden und Gesundheit. So Vielfältig wie jedes einzelne Kind ist auch der Alltag mit Petite Coaching Hamburg: Spielen, Entdecken, Singen, Krabbeln, Tanzen, Wachsen, Erforschen, Sprechen, Brabbeln, Gebärden und so vieles mehr.  Wir setzen uns erreichbare Ziele: in kleinen Schritten und mit großer Wirkung. Jedes Kind entwickelt sich einzigartig. Mit Ihnen entwickle ich eine einzigartige Förderung.",
+      "Das schönste Wunder der Welt kann uns auch mal vor die größten Herausforderungen stellen. Ich möchte Sie dabei begleiten, die Freude am Elternsein (wieder) zu finden und die Leichtigkeit in Ihr Familienleben zurückzubringen.",
     imageOne: {
       src: "/images/frühförderung-title-image.jpg",
       alt: "frühförderung für babys und kleinkinder",

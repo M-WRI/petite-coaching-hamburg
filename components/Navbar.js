@@ -22,6 +22,7 @@ const Navbar = () => {
             alt="logo"
             width={50}
             height={50}
+            priority="true"
           />
         </div>
         <div className={style.hamburger} onClick={handleMenu}>

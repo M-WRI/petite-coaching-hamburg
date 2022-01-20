@@ -1,10 +1,13 @@
 import Head from "next/head";
+import { useRouter } from "next/router";
 import Background from "../components/Background";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+  const path = router.pathname.split("/")[1];
   return (
     <>
       <Head>
@@ -40,7 +43,7 @@ function MyApp({ Component, pageProps }) {
         <main>
           <Component {...pageProps} />
         </main>
-        <Footer />
+        {path !== "kontakt" && <Footer />}
       </Background>
     </>
   );
