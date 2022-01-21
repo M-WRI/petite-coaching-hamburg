@@ -11,6 +11,14 @@
   padding: 16px 32px;
 }
 
+.logoContainer {
+  background: #fbf6f5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hamburger {
   cursor: pointer;
 }

@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={style.navbar}>
-        <div>
+        <div className={style.logoContainer}>
           <Image
             src="/images/petite-coaching-logo.svg"
             alt="logo"
