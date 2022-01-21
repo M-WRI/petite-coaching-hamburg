@@ -28,7 +28,7 @@ const ImageSquare = ({ src, alt, type, pos = 50 }) => {
     <>
       <motion.div
         ref={ref}
-        className={type}
+        className={`${type} imageSquare`}
         initial={{ opacity: 0, y: "50%" }}
         animate={animationControll}
         variants={animation}

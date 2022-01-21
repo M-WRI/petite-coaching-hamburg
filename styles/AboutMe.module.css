@@ -1,2 +1,85 @@
-.container {
+.landingContainer {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+.imageOne {
+  width: 440px;
+  height: 620px;
+  position: relative;
+}
+
+.imageTwo {
+  width: 380px;
+  height: 380px;
+  position: relative;
+  position: absolute;
+  transform: translate(40%, -20%);
+}
+
+.infoBox {
+  transform: translate(-20%, 20%);
+  align-self: flex-end;
+  width: 450px;
+}
+
+/* SECTION TWO */
+.sectionTwo {
+  padding: 200px 0 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 16px;
+}
+
+.sectionTwoHead h2 {
+  align-items: unset;
+  text-align: right;
+  margin: 0;
+}
+
+/* SECTION THREE */
+.sectionThree {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  align-items: center;
+}
+
+.imageThree {
+  width: 440px;
+  height: 620px;
+  position: relative;
+}
+
+/* SECTION FOUR */
+.sectionFour {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  align-items: center;
+}
+.infoBoxTwo {
+  max-width: 550px;
+  text-align: center;
+  position: relative;
+}
+
+/* SECTION FIVE */
+.sectionFive {
+  padding: 100px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+  align-items: center;
+}
+
+.imageFour {
+  width: 440px;
+  height: 620px;
+  position: relative;
+  justify-self: self-end;
 }
