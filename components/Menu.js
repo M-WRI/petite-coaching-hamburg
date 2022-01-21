@@ -7,21 +7,21 @@ import style from "../styles/Menu.module.css";
 const Menu = ({ handleMenu, showMenu }) => {
   const navbarData = [
     { id: "1", title: "home", link: "/" },
-    { id: "2", title: "frühförderung", link: "fruehfoerderung" },
-    { id: "3", title: "familiencoaching", link: "familiencoaching" },
-    { id: "5", title: "über mich", link: "ueber-mich" },
-    { id: "6", title: "kontakt", link: "kontakt" },
+    { id: "2", title: "frühförderung", link: "/fruehfoerderung" },
+    { id: "3", title: "familiencoaching", link: "/familiencoaching" },
+    { id: "5", title: "über mich", link: "/ueber-mich" },
+    { id: "6", title: "kontakt", link: "/kontakt" },
   ];
 
   const menuToggle = {
     open: {
       y: "0%",
-      transition: { bounce: 0, ease: "easeOut", duration: 0.3 },
+      transition: { bounce: 0, ease: "easeOut", duration: 0.2 },
       skewY: [5, 0],
     },
     close: {
       y: "-120%",
-      transition: { bounce: 0, ease: "easeOut", duration: 0.3, delay: 1.5 },
+      transition: { bounce: 0, ease: "easeOut", duration: 0.2, delay: 0.5 },
       skewY: [0, 5],
     },
     itemOpen: (i) => ({
@@ -36,7 +36,7 @@ const Menu = ({ handleMenu, showMenu }) => {
       opacity: 0,
       y: "100%",
       transition: {
-        delay: i * 0.2,
+        delay: i * 0.1,
       },
     }),
   };
