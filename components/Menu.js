@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { AiOutlineClose } from "react-icons/ai";
 
 // style
 import style from "../styles/Menu.module.css";
@@ -49,7 +50,9 @@ const Menu = ({ handleMenu, showMenu }) => {
       variants={menuToggle}
     >
       <div>
-        <div className={style.close} onClick={handleMenu}></div>
+        <div className={style.close} onClick={handleMenu}>
+          <AiOutlineClose />
+        </div>
         <nav className={style.menuListContainer}>
           <ul className={style.menuList}>
             {navbarData.map((item, i) => (
