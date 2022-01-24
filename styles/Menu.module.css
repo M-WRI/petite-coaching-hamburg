@@ -41,7 +41,6 @@
 }
 
 .menuListItem {
-  margin: 15px 0;
   font-family: var(--primary-headline);
   font-size: 3.5rem;
   position: relative;
@@ -53,7 +52,7 @@
   width: 0%;
   background: var(--bg-orange);
   position: absolute;
-  bottom: 15px;
+  bottom: 0px;
   transition: width 0.2s;
 }
 

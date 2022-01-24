@@ -56,11 +56,11 @@ const Menu = ({ handleMenu, showMenu }) => {
         <nav className={style.menuListContainer}>
           <ul className={style.menuList}>
             {navbarData.map((item, i) => (
-              <li key={item.id}>
+              <li key={item.id} className={style.menuListItem}>
                 <Link href={item.link}>
                   <a>
                     <div className={style.overflow}>
-                      <motion.li
+                      <motion.div
                         key={item.id}
                         className={style.menuListItem}
                         initial={{ opacity: 0, y: "100%" }}
@@ -70,7 +70,7 @@ const Menu = ({ handleMenu, showMenu }) => {
                         onClick={handleMenu}
                       >
                         {item.title}
-                      </motion.li>
+                      </motion.div>
                       {showMenu && <div className={style.line}></div>}
                     </div>
                   </a>
@@ -85,3 +85,24 @@ const Menu = ({ handleMenu, showMenu }) => {
 };
 
 export default Menu;
+
+{
+  /* <Link href={item.link}>
+<a>
+  <div className={style.overflow}>
+    <motion.li
+      key={item.id}
+      className={style.menuListItem}
+      initial={{ opacity: 0, y: "100%" }}
+      custom={i}
+      animate={showMenu ? "itemOpen" : "itemClose"}
+      variants={menuToggle}
+      onClick={handleMenu}
+    >
+      {item.title}
+    </motion.li>
+    {showMenu && <div className={style.line}></div>}
+  </div>
+</a>
+</Link> */
+}
