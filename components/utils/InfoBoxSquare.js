@@ -44,7 +44,7 @@ const InfoBoxSquare = ({ color = "orange", title = "", text = "" }) => {
       >
         {title && (
           <div className={style.headWrapper}>
-            <h3 className={style.head}>{title}</h3>
+            <h2 className={style.head}>{title}</h2>
           </div>
         )}
         <div className={style.textWrapper}>

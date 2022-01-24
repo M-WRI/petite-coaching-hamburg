@@ -86,23 +86,3 @@ const Menu = ({ handleMenu, showMenu }) => {
 
 export default Menu;
 
-{
-  /* <Link href={item.link}>
-<a>
-  <div className={style.overflow}>
-    <motion.li
-      key={item.id}
-      className={style.menuListItem}
-      initial={{ opacity: 0, y: "100%" }}
-      custom={i}
-      animate={showMenu ? "itemOpen" : "itemClose"}
-      variants={menuToggle}
-      onClick={handleMenu}
-    >
-      {item.title}
-    </motion.li>
-    {showMenu && <div className={style.line}></div>}
-  </div>
-</a>
-</Link> */
-}
