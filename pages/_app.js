@@ -44,6 +44,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </main>
         {/* {path !== "kontakt" && <Footer />} */}
+        {/* {path !== "kontakt" && <Footer />} */}
       </Background>
     </>
   );
