@@ -1,3 +1,12 @@
+export const meta = {
+  title: "Petit Coaching | Mobile Frühförderung | Hamburg",
+  description:
+    "Sie sind Eltern und Sie wünschen sich ein erfülltes Familienleben und die bestmögliche Entwicklung für das Wertvollste in Ihrem Leben: für Ihr Kind.",
+  link: "https://www.petitecoaching.de/",
+  img: "/images/petit-coaching-og.jpg",
+  imgTwitter: "/images/petit-coaching-og-twitter.jpg",
+};
+
 export const data = {
   landingSection: {
     headline: "Petite Coaching",

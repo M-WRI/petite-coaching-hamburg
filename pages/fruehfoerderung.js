@@ -1,5 +1,5 @@
 // data
-import { data } from "../data/earlyIdentificationData";
+import { data, meta } from "../data/earlyIdentificationData";
 
 // components
 import ImageSquare from "../components/utils/ImageSquare";
@@ -7,14 +7,23 @@ import Headline from "../components/utils/Headline";
 import Text from "../components/utils/Text";
 import InfoBox from "../components/utils/InfoBox";
 import InfoBoxSquare from "../components/utils/InfoBoxSquare";
+import SEO from "../components/SEO";
 
 // style
 import style from "../styles/ProductPage.module.css";
 
 const fruehfoerderung = () => {
-  console.log(data.sectionThree);
+  const { title, description, link, img, imgTwitter } = meta;
+
   return (
     <>
+      <SEO
+        title={title}
+        description={description}
+        link={link}
+        img={img}
+        imgTwitter={imgTwitter}
+      />
       <section className={style.landingSectionContainer}>
         <div className={style.landingImageContainer}>
           <ImageSquare

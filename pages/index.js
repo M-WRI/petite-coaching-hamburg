@@ -1,5 +1,5 @@
 // data
-import { data } from "../data/homeData";
+import { data, meta } from "../data/homeData";
 
 // components
 import Headline from "../components/utils/Headline";
@@ -9,14 +9,23 @@ import InfoBoxSquare from "../components/utils/InfoBoxSquare";
 import LinkBox from "../components/utils/LinkBox";
 import InstagramComponent from "../components/InstagramComponent";
 import InfoBox from "../components/utils/InfoBox";
+import SEO from "../components/SEO";
 
 // style
 import style from "../styles/Home.module.css";
 
 export default function Home() {
   const { landingSection, sectionTwo, sectionThree, sectionFour } = data;
+  const { title, description, link, img, imgTwitter } = meta;
   return (
     <>
+      <SEO
+        title={title}
+        description={description}
+        link={link}
+        img={img}
+        imgTwitter={imgTwitter}
+      />
       <section className={style.landingContainer}>
         <div className={style.headContainer}>
           <Headline subHead={landingSection.subHead}>

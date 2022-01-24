@@ -1,11 +1,12 @@
 // data
-import { data } from "../data/aboutMeData";
+import { data, meta } from "../data/aboutMeData";
 
 // conponents
 import ImageSquare from "../components/utils/ImageSquare";
 import InfoBox from "../components/utils/InfoBoxSquare";
 import Headline from "../components/utils/Headline";
 import Text from "../components/utils/Text";
+import SEO from "../components/SEO";
 
 // style
 import style from "../styles/AboutMe.module.css";
@@ -22,9 +23,17 @@ const AboutMe = () => {
     infoBoxFour,
     infoBoxFive,
   } = data;
+  const { title, description, link, img, imgTwitter } = meta;
 
   return (
     <>
+      <SEO
+        title={title}
+        description={description}
+        link={link}
+        img={img}
+        imgTwitter={imgTwitter}
+      />
       <section className={style.landingContainer}>
         <div className={style.imageOne}>
           <ImageSquare src={imageOne.src} alt={imageOne.alt} pos={65} />

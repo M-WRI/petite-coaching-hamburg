@@ -1,3 +1,12 @@
+export const meta = {
+  title: "Petit Coaching | Familiencoaching | Hamburg",
+  description:
+    "Das schönste Wunder der Welt kann uns auch mal vor die größten Herausforderungen stellen. Ich möchte Sie dabei begleiten.",
+  link: "https://www.petitecoaching.de/familiencoaching",
+  img: "/images/petit-coaching-og.jpg",
+  imgTwitter: "/images/petit-coaching-og-twitter.jpg",
+};
+
 export const data = {
   LandingSection: {
     title: "Familiencoaching",

@@ -1,3 +1,12 @@
+export const meta = {
+  title: "Petit Coaching | Über Mich | Hamburg",
+  description:
+    "Ich bin Pädagogin, B.A. transdisziplinäre Frühförderin und Gründerin von Petite Coaching Hamburg.",
+  link: "https://www.petitecoaching.de/ueber-mich",
+  img: "/images/petit-coaching-og.jpg",
+  imgTwitter: "/images/petit-coaching-og-twitter.jpg",
+};
+
 export const data = {
   imageOne: {
     src: "/images/teresa-jaeger-about-me-one.jpg",

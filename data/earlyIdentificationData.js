@@ -1,3 +1,12 @@
+export const meta = {
+  title: "Petit Coaching | Frühförderung | Hamburg",
+  description:
+    "Frühförderung von Anfang an – denn die ersten Lebensjahre Ihres Kindes sind entscheidend für Entwicklung, Wohlbefinden und Gesundheit.",
+  link: "https://www.petitecoaching.de/fruehfoerderung",
+  img: "/images/petit-coaching-og.jpg",
+  imgTwitter: "/images/petit-coaching-og-twitter.jpg",
+};
+
 export const data = {
   LandingSection: {
     title: "Frühförderung",
