@@ -1,4 +1,3 @@
-import { Html } from "next/document";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Background from "../components/Background";
@@ -11,7 +10,6 @@ function MyApp({ Component, pageProps }) {
   const path = router.pathname.split("/")[1];
   return (
     <>
-      <Html lang="de">
         <Head>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
@@ -47,7 +45,6 @@ function MyApp({ Component, pageProps }) {
           </main>
           {/* {path !== "kontakt" && <Footer />} */}
         </Background>
-      </Html>
     </>
   );
 }
