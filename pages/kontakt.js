@@ -27,7 +27,7 @@ const kontakt = () => {
       />
       <section className={style.container}>
         <div className={style.wrapper}>
-          <div className={style.formContainer}>
+          {/* <div className={style.formContainer}>
             <form>
               <input className={style.input} type="text" placeholder="Name" />
               <div className={style.inputWrapper}>
@@ -64,7 +64,7 @@ const kontakt = () => {
                 Senden
               </button>
             </form>
-          </div>
+          </div> */}
           <div className={style.contactContainer}>
             <h3 className={style.footerName}>Teresa Jäger</h3>
             <div className={style.iconsContainer}>
