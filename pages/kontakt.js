@@ -1,4 +1,4 @@
-// import { meta } from "../data/contactData";
+import { meta } from "../data/contactData";
 import Link from "next/link";
 import {
   AiOutlineMail,
