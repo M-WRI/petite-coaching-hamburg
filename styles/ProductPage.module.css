@@ -1,0 +1,59 @@
+.landingSectionContainer {
+  position: relative;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 1rem;
+}
+.landingImageContainer {
+  height: 60vh;
+  position: relative;
+}
+
+.infoBoxOne {
+  position: relative;
+}
+
+@media (max-width: 960px) {
+  .landingSectionContainer {
+    margin: 150px 0;
+    height: unset;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* section two */
+.sectionTwoContainer {
+  max-width: 850px;
+  margin: 150px auto;
+}
+
+/* section three */
+.sectionThreeContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin: 150px 0;
+}
+
+.sectionThreeInfoBox {
+  position: relative;
+  width: 110%;
+  z-index: 1;
+}
+
+.sectionThreeImage {
+  height: 90vh;
+}
+
+@media (max-width: 768px) {
+  .sectionThreeContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sectionThreeInfoBox {
+    width: 100%;
+    grid-row: 2;
+  }
+}

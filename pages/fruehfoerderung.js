@@ -1,55 +1,52 @@
-import InfoSectionTwo from "../components/EarlyIdentificationSections/InfoSectionTwo";
-import InfoSectionOne from "../components/EarlyIdentificationSections/InfoSectionOne";
-import LandingSection from "../components/EarlyIdentificationSections/LandingSection";
-import Head from "next/head";
+// data
+import { data } from "../data/earlyIdentificationData";
+
+// components
+import ImageSquare from "../components/utils/ImageSquare";
+import Headline from "../components/utils/Headline";
+import Text from "../components/utils/Text";
+import InfoBox from "../components/utils/InfoBox";
+import InfoBoxSquare from "../components/utils/InfoBoxSquare";
+
+// style
+import style from "../styles/ProductPage.module.css";
 
 const fruehfoerderung = () => {
+  console.log(data.sectionThree);
   return (
     <>
-      <Head>
-        <title>Petit Coaching | Frühförderung | Hamburg</title>
-        <meta
-          name="description"
-          content="Frühförderung von Anfang an – denn die ersten Lebensjahre Ihres Kindes sind entscheidend für Entwicklung, Wohlbefinden und Gesundheit."
+      <section className={style.landingSectionContainer}>
+        <div className={style.landingImageContainer}>
+          <ImageSquare
+            src={data.LandingSection.imageOne.src}
+            alt={data.LandingSection.imageOne.alt}
+            pos={65}
+          />
+        </div>
+        <div className={style.infoBoxOne}>
+          <Headline primary={false}>{data.LandingSection.title}</Headline>
+          <Text center={true}>{data.LandingSection.introText}</Text>
+        </div>
+      </section>
+      <section className={style.sectionTwoContainer}>
+        <InfoBox
+          color="blue"
+          title={data.sectionTwo.title}
+          text={data.sectionTwo.text}
+          wordbreak={true}
         />
-        <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://www.petitecoaching.de/fruehfoerderung"
-        />
-        <meta
-          property="og:title"
-          content="Petit Coaching | Frühförderung | Hamburg"
-        />
-        <meta
-          property="og:description"
-          content="Frühförderung von Anfang an – denn die ersten Lebensjahre Ihres Kindes sind entscheidend für Entwicklung, Wohlbefinden und Gesundheit."
-        />
-        <meta property="og:locale" content="de_DE" />
-        <meta property="og:image" content="/images/petit-coaching-og.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:card" content="summary" />
-        <meta
-          name="twitter:url"
-          content="https://www.petitecoaching.de/fruehfoerderung"
-        />
-        <meta
-          name="twitter:title"
-          content="Petit Coaching | Frühförderung | Hamburg"
-        />
-        <meta
-          name="twitter:description"
-          content="Frühförderung von Anfang an – denn die ersten Lebensjahre Ihres Kindes sind entscheidend für Entwicklung, Wohlbefinden und Gesundheit."
-        />
-        <meta
-          name="twitter:image"
-          content="/images/petit-coaching-og-twitter.jpg"
-        />
-      </Head>
-      <LandingSection />
-      <InfoSectionOne />
-      <InfoSectionTwo />
+      </section>
+      <section className={style.sectionThreeContainer}>
+        <div className={style.sectionThreeInfoBox}>
+          <InfoBoxSquare color="blue" text={data.sectionThree.infoBox.text} />
+        </div>
+        <div className={style.sectionThreeImage}>
+          <ImageSquare
+            src={data.sectionThree.imageTwo.src}
+            alt={data.sectionThree.imageTwo.alt}
+          />
+        </div>
+      </section>
     </>
   );
 };
