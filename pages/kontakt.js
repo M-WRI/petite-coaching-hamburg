@@ -45,12 +45,7 @@ const kontakt = () => {
               <div className={style.controlGroup}>
                 <label className={`${style.control} ${style.controlRadio}`}>
                   Frühförderung
-                  <input
-                    type="radio"
-                    name="radio"
-                    value="frühförderung"
-                    checked="checked"
-                  />
+                  <input type="radio" name="radio" value="frühförderung" />
                   <div className={style.controlIndicator}></div>
                 </label>
 
