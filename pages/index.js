@@ -1,55 +1,94 @@
-import Head from "next/head";
+// data
+import { data } from "../data/homeData";
 
 // components
-import AboutMe from "../components/HomeSections/AboutMeSection";
-import EarlyIdentification from "../components/HomeSections/EarlyIdentificationSection";
-import ExpertiseSection from "../components/HomeSections/ExpertiseSection";
-import InstagramSection from "../components/HomeSections/InstagramSection";
-import LandingSection from "../components/HomeSections/LandingSection";
+import Headline from "../components/utils/Headline";
+import CoverImage from "../components/utils/CoverImage";
+import ImageSquare from "../components/utils/ImageSquare";
+import InfoBoxSquare from "../components/utils/InfoBoxSquare";
+import LinkBox from "../components/utils/LinkBox";
+import InstagramComponent from "../components/InstagramComponent";
+import InfoBox from "../components/utils/InfoBox";
+
+// style
+import style from "../styles/Home.module.css";
 
 export default function Home() {
+  const { landingSection, sectionTwo, sectionThree, sectionFour } = data;
   return (
     <>
-      <Head>
-        <title>Petit Coaching | Frühförderung | Hamburg</title>
-        <meta
-          name="description"
-          content="Sie sind Eltern und Sie wünschen sich ein erfülltes Familienleben und die bestmögliche Entwicklung für das Wertvollste in Ihrem Leben: für Ihr Kind."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://www.petitecoaching.de/" />
-        <meta
-          property="og:title"
-          content="Petit Coaching | Frühförderung | Familien Coaching | Babykurse | Hamburg"
-        />
-        <meta
-          property="og:description"
-          content="Sie sind Eltern und Sie wünschen sich ein erfülltes Familienleben und die bestmögliche Entwicklung für das Wertvollste in Ihrem Leben: für Ihr Kind."
-        />
-        <meta property="og:locale" content="de_DE" />
-        <meta property="og:image" content="/images/petit-coaching-og.jpg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:url" content="https://www.petitecoaching.de/" />
-        <meta
-          name="twitter:title"
-          content="Petit Coaching | Frühförderung | Familien Coaching | Babykurse | Hamburg"
-        />
-        <meta
-          name="twitter:description"
-          content="Sie sind Eltern und Sie wünschen sich ein erfülltes Familienleben und die bestmögliche Entwicklung für das Wertvollste in Ihrem Leben: für Ihr Kind."
-        />
-        <meta
-          name="twitter:image"
-          content="/images/petit-coaching-og-twitter.jpg"
-        />
-      </Head>
-      <LandingSection />
-      <EarlyIdentification />
-      <ExpertiseSection />
-      <InstagramSection />
-      <AboutMe />
+      <section className={style.landingContainer}>
+        <div className={style.headContainer}>
+          <Headline subHead={landingSection.subHead}>
+            {landingSection.headline}
+          </Headline>
+        </div>
+        <div className={style.landingCoverImageContainer}>
+          <CoverImage
+            src={landingSection.landingImage.src}
+            alt={landingSection.landingImage.alt}
+            overlay={true}
+            pos={40}
+          />
+        </div>
+      </section>
+      <section className={style.sectionTwoContainer}>
+        <div className={style.sectionTwoImageOne}>
+          <ImageSquare
+            src={sectionTwo.imageOne.src}
+            alt={sectionTwo.imageOne.alt}
+            pos={65}
+          />
+        </div>
+        <div className={style.sectionTwoInfoBoxContainer}>
+          <div className={style.sectionTwoContentWrapper}>
+            <InfoBoxSquare
+              color="blue"
+              title={sectionTwo.infoBox.title}
+              text={sectionTwo.infoBox.text}
+            />
+          </div>
+          <div className={style.sectionTwoImageTwo}>
+            <ImageSquare
+              src={sectionTwo.imageTwo.src}
+              alt={sectionTwo.imageTwo.alt}
+              type={sectionTwo.imageTwo.type}
+            />
+          </div>
+        </div>
+      </section>
+      <section className={style.sectionThreeContainer}>
+        <div className={style.sectionThreeInfoBox}>
+          <InfoBoxSquare
+            title={sectionThree.infoBox.title}
+            text={sectionThree.infoBox.text}
+          />
+        </div>
+        {sectionThree.links.map((link) => (
+          <LinkBox
+            key={link.id}
+            title={link.title}
+            slug={link.slug}
+            img={link.img}
+          />
+        ))}
+      </section>
+      <InstagramComponent />
+      <section className={style.sectionFourContainer}>
+        <div className={style.sectionFourInfoBox}>
+          <InfoBox title={sectionFour.title} text={sectionFour.text} />
+        </div>
+        <div className={style.sectionFourImage}>
+          <div className={style.sectionFourCoverImageContainer}>
+            <CoverImage
+              src={sectionFour.image.src}
+              alt={sectionFour.image.alt}
+              pos={50}
+              overlay={true}
+            />
+          </div>
+        </div>
+      </section>
     </>
   );
 }

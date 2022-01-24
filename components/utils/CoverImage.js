@@ -36,17 +36,15 @@ const CoverImage = ({ alt, src, pos = 50, overlay = false }) => {
       animate={animationControl}
       variants={animation}
     >
-      <div style={{ position: "relative", height: "100%" }}>
-        <Image
-          src={src}
-          alt={alt}
-          layout="fill"
-          priority="true"
-          objectFit="cover"
-          objectPosition={`${pos}%`}
-        />
-        {overlay && <div className={style.overlay}></div>}
-      </div>
+      <Image
+        src={src}
+        alt={alt}
+        layout="fill"
+        priority="true"
+        objectFit="cover"
+        objectPosition={`${pos}%`}
+      />
+      {overlay && <div className={style.overlay}></div>}
     </motion.div>
   );
 };

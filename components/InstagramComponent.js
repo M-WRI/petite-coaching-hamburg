@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 // style
-import style from "../../styles/InstagramSection.module.css";
+import style from "../styles/InstagramSection.module.css";
 
 const InstagramSection = () => {
   return (
