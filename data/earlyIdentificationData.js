@@ -1,5 +1,5 @@
 export const meta = {
-  title: "Petit Coaching | Frühförderung | Hamburg",
+  title: "Petite Coaching | Frühförderung | Hamburg",
   description:
     "Frühförderung von Anfang an – denn die ersten Lebensjahre Ihres Kindes sind entscheidend für Entwicklung, Wohlbefinden und Gesundheit.",
   link: "https://www.petitecoaching.de/fruehfoerderung",
@@ -25,10 +25,11 @@ export const data = {
 
   sectionThree: {
     infoBox: {
+      title: "Die Hauptrolle im Leben Ihres Kindes spielen Sie",
       text: "Die Hauptrolle im Leben Ihres Kindes spielen Sie. Die Verbundenheit zwischen Ihnen und Ihrem Kind ist so wertvoll. Daher sind Sie auch in der Frühförderung unerlässlich. Ich berate Sie und gebe Ihnen mein wertvolles Know-How weiter: wie Sie Ihr Kind bedürfnisorientiert in seiner Entwicklung fördern und begleiten, wie Sie besondere Herausforderungen meistern und den Blick auf die Besonderheiten und Einzigartigkeiten Ihres Kindes richten. Zuhause ist es am Schönsten: Deswegen komme ich für die Frühförderung gerne zu Ihnen. In vertrauter Umgebung ist die Frühförderung am wirksamsten und Sie entfliehen dem Terminstress -> Mehr entspannte Qualitätszeit für Sie und Ihre Kleinen.",
     },
     imageTwo: {
-      src: "/images/fühförderung-page-image-two.jpg",
+      src: "/images/Teresa-264.jpg",
       alt: "frühförderung zu ihnen nach hause",
     },
   },

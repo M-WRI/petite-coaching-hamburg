@@ -6,7 +6,7 @@ import { useEffect } from "react";
 // style
 import style from "../../styles/InfoBoxSquare.module.css";
 
-const InfoBoxSquare = ({ color = "orange", title = "", text = "" }) => {
+const InfoBoxSquare = ({ color = "orange", title = "", text = "", data }) => {
   const { ref, inView } = useInView({
     threshold: 0.4,
   });
@@ -42,14 +42,31 @@ const InfoBoxSquare = ({ color = "orange", title = "", text = "" }) => {
           padding: "1rem",
         }}
       >
-        {title && (
-          <div className={style.headWrapper}>
-            <h2 className={style.head}>{title}</h2>
-          </div>
+        {data ? (
+          <>
+            {data.map((el) => (
+              <div key={el.id}>
+                <div className={style.headWrapper}>
+                  <h2 className={style.headArr}>{el.question}</h2>
+                </div>
+                <div className={style.textWrapper}>
+                  <Text center={true}>{el.answer}</Text>
+                </div>
+              </div>
+            ))}
+          </>
+        ) : (
+          <>
+            {title && (
+              <div className={style.headWrapper}>
+                <h2 className={style.head}>{title}</h2>
+              </div>
+            )}
+            <div className={style.textWrapper}>
+              <Text center={true}>{text}</Text>
+            </div>
+          </>
         )}
-        <div className={style.textWrapper}>
-          <Text center={true}>{text}</Text>
-        </div>
       </motion.div>
     </>
   );

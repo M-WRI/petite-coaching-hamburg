@@ -1,10 +1,8 @@
 .image {
   position: relative;
   overflow: hidden;
-  width: 370px;
-  height: 530px;
-  background: #e3e3e3;
-  border-radius: 200px 200px 0 0;
+  width: 430px;
+  height: 430px;
 }
 
 .overlay {
@@ -20,14 +18,14 @@
 
 @media (max-width: 960px) {
   .image {
-    width: 38.543vw;
+    width: 55.3vw;
     height: 55.3vw;
   }
 }
 
 @media (max-width: 485px) {
   .image {
-    width: 65vw;
+    width: 90vw;
     height: 90vw;
   }
 }

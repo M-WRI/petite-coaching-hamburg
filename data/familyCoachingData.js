@@ -1,5 +1,5 @@
 export const meta = {
-  title: "Petit Coaching | Familiencoaching | Hamburg",
+  title: "Petite Coaching | Familiencoaching | Hamburg",
   description:
     "Das schönste Wunder der Welt kann uns auch mal vor die größten Herausforderungen stellen. Ich möchte Sie dabei begleiten.",
   link: "https://www.petitecoaching.de/familiencoaching",
@@ -13,7 +13,7 @@ export const data = {
     introText:
       "Das schönste Wunder der Welt kann uns auch mal vor die größten Herausforderungen stellen. Ich möchte Sie dabei begleiten, die Freude am Elternsein (wieder) zu finden und die Leichtigkeit in Ihr Familienleben zurückzubringen.",
     imageOne: {
-      src: "/images/frühförderung-title-image.jpg",
+      src: "/images/familiencoaching-image-one.jpg",
       alt: "frühförderung für babys und kleinkinder",
     },
   },
@@ -28,7 +28,7 @@ export const data = {
       text: "Auch besondere Herausforderungen, auffälliges Verhalten in der Kita oder zu Hause können wir in einem individuellen Coaching bearbeiten. Ein Coaching hilft Ihnen dabei, wenn Sie wieder zu Ihrer elterlichen Intuition zurückfinden wollen. Raus aus dem Ratgeber-Dschungel hin zu individueller Beratung und Coaching. Sind Sie bereit, ein erfülltes Familienleben zu führen und wirklich im Einklang mit Ihrem Kind zu sein? Ich freue mich darauf, Ihre kleinen Schätze und Sie kennenzulernen. Get in Touch für ein kostenloses und unverbindliches Erstgespräch ",
     },
     imageTwo: {
-      src: "/images/fühförderung-page-image-two.jpg",
+      src: "/images/Teresa-256.jpg",
       alt: "frühförderung zu ihnen nach hause",
       type: "early-identification-image-two",
     },

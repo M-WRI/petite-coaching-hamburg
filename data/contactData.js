@@ -1,5 +1,5 @@
 export const meta = {
-  title: "Petit Coaching | Kontakt | Hamburg",
+  title: "Petite Coaching | Kontakt | Hamburg",
   description:
     "Petite Coaching Hamburg bietet Ihnen ein kostenloses Beratungsgespräch an. Nehmen Sie einfach Kontakt zu mir auf.",
   link: "https://www.petitecoaching.de/kontakt",

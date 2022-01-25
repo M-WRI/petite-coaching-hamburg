@@ -4,6 +4,13 @@
   text-transform: uppercase;
 }
 
+.headArr {
+  margin: 0;
+  font-weight: 200;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
 @media (max-width: 960px) {
   .head {
     margin: 0;

@@ -53,6 +53,7 @@ export default function Home() {
           <div className={style.sectionTwoContentWrapper}>
             <InfoBoxSquare
               color="blue"
+              data={false}
               title={sectionTwo.infoBox.title}
               text={sectionTwo.infoBox.text}
             />
@@ -85,7 +86,11 @@ export default function Home() {
       <InstagramComponent />
       <section className={style.sectionFourContainer}>
         <div className={style.sectionFourInfoBox}>
-          <InfoBox title={sectionFour.title} text={sectionFour.text} />
+          <InfoBox
+            title={sectionFour.title}
+            text={sectionFour.text}
+            wordbreak={true}
+          />
         </div>
         <div className={style.sectionFourImage}>
           <div className={style.sectionFourCoverImageContainer}>

@@ -21,28 +21,3 @@ const InstagramSection = () => {
 };
 
 export default InstagramSection;
-
-// export async function getStaticProps(context) {
-//   // create a new client to communicate with  Instagram
-//   // this service requires authentication
-//   //with username and password parameters
-//   const client = new Instagram({
-//     username: process.env.local.IG_USERNAME,
-//     password: process.env.local.IG_PASSWORD,
-//   });
-
-//   let images = [];
-//   try {
-//     // attempt to log in to Instagram
-//     await client.login();
-//   } catch (err) {
-//     // throw an error if login to Instagram fails
-//     console.log("Something went wrong while logging into Instagram", err);
-//   }
-
-//   return {
-//     props: {
-//       instagramPosts: images,
-//     },
-//   };
-// }
