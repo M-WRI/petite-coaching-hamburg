@@ -70,8 +70,9 @@ export default function Home() {
       <section className={style.sectionThreeContainer}>
         <div className={style.sectionThreeInfoBox}>
           <InfoBoxSquare
-            title={sectionThree.infoBox.title}
-            text={sectionThree.infoBox.text}
+            // title={sectionThree.infoBox.title}
+            // text={sectionThree.infoBox.text}
+            data={sectionThree.infoBox}
           />
         </div>
         {sectionThree.links.map((link) => (
@@ -83,7 +84,7 @@ export default function Home() {
           />
         ))}
       </section>
-      <InstagramComponent />
+      {/* <InstagramComponent /> */}
       <section className={style.sectionFourContainer}>
         <div className={style.sectionFourInfoBox}>
           <InfoBox

@@ -6,3 +6,7 @@ export const meta = {
   img: "/images/petit-coaching-og.jpg",
   imgTwitter: "/images/petit-coaching-og-twitter.jpg",
 };
+
+export const data = {
+  title: `Termin für ein kostenloses  Erstgespräch auf Anfrage`,
+};

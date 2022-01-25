@@ -46,12 +46,16 @@ const InfoBoxSquare = ({ color = "orange", title = "", text = "", data }) => {
           <>
             {data.map((el) => (
               <div key={el.id}>
-                <div className={style.headWrapper}>
-                  <h2 className={style.headArr}>{el.question}</h2>
-                </div>
-                <div className={style.textWrapper}>
-                  <Text center={true}>{el.answer}</Text>
-                </div>
+                {el.question && (
+                  <div className={style.headWrapper}>
+                    <h2 className={style.headArr}>{el.question}</h2>
+                  </div>
+                )}
+                {el.answer && (
+                  <div className={style.textWrapper}>
+                    <Text center={true}>{el.answer}</Text>
+                  </div>
+                )}
               </div>
             ))}
           </>

@@ -4,8 +4,17 @@
   z-index: 1;
   max-width: 1280px;
   height: 100vh;
-  display: flex;
+  display: grid;
   align-items: center;
+}
+
+.container h2 {
+  display: flex;
+  font-size: var(--third-headline-size);
+  display: flex;
+  flex-direction: column;
+  font-family: var(--primary-headline);
+  text-align: center;
 }
 
 .wrapper {

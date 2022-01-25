@@ -5,7 +5,7 @@ import { data, meta } from "../data/earlyIdentificationData";
 import ImageSquare from "../components/utils/ImageSquare";
 import Headline from "../components/utils/Headline";
 import Text from "../components/utils/Text";
-import InfoBox from "../components/utils/InfoBox";
+// import InfoBox from "../components/utils/InfoBox";
 import InfoBoxSquare from "../components/utils/InfoBoxSquare";
 import SEO from "../components/SEO";
 
@@ -37,13 +37,43 @@ const fruehfoerderung = () => {
           <Text center={true}>{data.LandingSection.introText}</Text>
         </div>
       </section>
-      <section className={style.sectionTwoContainer}>
-        <InfoBox
+      <section
+        className={`${style.sectionTwoContainer} ${style.sectionTwoContainerEarly}`}
+      >
+        {/* <InfoBox
           color="blue"
           title={data.sectionTwo.title}
           text={data.sectionTwo.text}
           wordbreak={true}
-        />
+        /> */}
+        <div>
+          <div>
+            <h3>Für wen?</h3>
+            <div className={style.border}></div>
+          </div>
+          <ul>
+            <li>Kinder ab der Geburt bis zum dritten Lebensjahr</li>
+            <li>Mit und ohne Behinderung oder Entwicklungsverzögerung</li>
+            <li>Eltern, die Beratungsbedarf haben</li>
+          </ul>
+        </div>
+        <div>
+          <div>
+            <h3>Kostenloses Erstgespräch</h3>
+            <div className={style.border}></div>
+          </div>
+          <p>Beratung, Bedarfsanalyse, Förderziele</p>
+        </div>
+        <div>
+          <div>
+            <h3>Frühförderung & Beratung</h3>
+            <div className={style.border}></div>
+          </div>
+          <p>
+            60 Min körperliche & seelische Förderung für Ihr Kind, Beratung &
+            wertvolle Tipps für Sie
+          </p>
+        </div>
       </section>
       <section className={style.sectionThreeContainer}>
         <div className={style.sectionThreeInfoBox}>

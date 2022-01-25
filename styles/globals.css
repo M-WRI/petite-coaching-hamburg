@@ -16,6 +16,7 @@
   --primary-headline-size: 5rem;
   --sub-headline-size: 2rem;
   --secondary-headline-size: 4rem;
+  --third-headline-size: 3rem;
   --info-headline: 2rem;
   --text-size: 1rem;
   /* Colors */
@@ -61,6 +62,7 @@ a {
 @media (max-width: 768px) {
   :root {
     --secondary-headline-size: 10vw;
+    --third-headline-size: 7vw;
   }
 }
 

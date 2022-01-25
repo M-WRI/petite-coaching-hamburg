@@ -58,10 +58,33 @@ export const data = {
         img: "/images/Teresa-248.jpg",
       },
     ],
-    infoBox: {
-      title: "Meine Expertise",
-      text: "Ich arbeite nach den neusten wissenschaftlichen Erkenntnissen zum Thema frühkindliche Entwicklung und Förderung. Lernen ist ein lebenslanger Prozess – daher bilde ich mich regelmäßig weiter und lerne täglich dazu. Je nach Bedarf setze ich auf das wertvolle Know-How anderer ExpertInnen und gehe in Kooperation – z.B. mit Ihrer Kita, KinderarztIn, TherapeutIn, Hebamme.",
-    },
+    // infoBox: {
+    //   title: "Meine Expertise",
+    //   text: "Ich arbeite nach den neusten wissenschaftlichen Erkenntnissen zum Thema frühkindliche Entwicklung und Förderung. Lernen ist ein lebenslanger Prozess – daher bilde ich mich regelmäßig weiter und lerne täglich dazu. Je nach Bedarf setze ich auf das wertvolle Know-How anderer ExpertInnen und gehe in Kooperation – z.B. mit Ihrer Kita, KinderarztIn, TherapeutIn, Hebamme.",
+    // },
+    infoBox: [
+      {
+        id: 1,
+        question: "Individuelles Familiencoaching",
+        answer: "Kindliches Verhalten & Entwicklung",
+      },
+      {
+        id: 2,
+        answer: "Ein- & Durchschlafen",
+      },
+      {
+        id: 3,
+        answer: "Vermehrtes Weinen",
+      },
+      {
+        id: 4,
+        answer: "Strukturen im Familienalltag",
+      },
+      {
+        id: 5,
+        answer: "Bindung & Bedürfnisorientierung",
+      },
+    ],
   },
   sectionFour: {
     title: "Hallo, Ich bin  Teresa Jäger",

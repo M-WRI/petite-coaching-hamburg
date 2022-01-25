@@ -1,3 +1,5 @@
+import { data } from "../data/contactData";
+
 import Link from "next/link";
 import {
   AiOutlineMail,
@@ -12,6 +14,12 @@ import style from "../styles/Kontakt.module.css";
 const ContactForm = () => {
   return (
     <section className={style.container}>
+      <h2>
+        {data.title.split("  ").map((el, i) => (
+          <span key={i}>{el}</span>
+        ))}
+      </h2>
+
       <div className={style.wrapper}>
         <div className={style.formContainer}>
           <form>
