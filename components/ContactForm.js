@@ -55,7 +55,9 @@ const ContactForm = () => {
                 <div className={style.iconWrapper}>
                   <AiOutlineMail />
                 </div>
-                hello@petite-coaching-hamburg.de
+                <span className={style.span}>
+                  hello@petite-coaching-hamburg.de
+                </span>
               </a>
             </Link>
 
@@ -67,7 +69,7 @@ const ContactForm = () => {
                 <div className={style.iconWrapper}>
                   <AiOutlineInstagram />
                 </div>
-                @petite.coaching.hamburg
+                <span className={style.span}>@petite.coaching.hamburg</span>
               </a>
             </Link>
 
@@ -76,7 +78,7 @@ const ContactForm = () => {
                 <div className={style.iconWrapper}>
                   <AiOutlinePhone />
                 </div>
-                +49 1573 53 61 32 2
+                <span className={style.span}>+49 1573 53 61 32 2</span>
               </a>
             </Link>
 
@@ -88,7 +90,7 @@ const ContactForm = () => {
                 <div className={style.iconWrapper}>
                   <AiOutlineLinkedin />
                 </div>
-                Teresa Jäger
+                <span className={style.span}>Teresa Jäger</span>
               </a>
             </Link>
           </div>

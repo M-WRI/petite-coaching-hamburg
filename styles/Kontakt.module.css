@@ -260,7 +260,22 @@
 }
 
 @media (max-width: 450px) {
+  .footerName {
+    text-align: center;
+  }
+
+  .iconsContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    grid-gap: 2rem;
+  }
+
   .controlGroup {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .span {
+    display: none;
   }
 }

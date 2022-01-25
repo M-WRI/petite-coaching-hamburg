@@ -15,7 +15,7 @@ const AboutMe = () => {
   const {
     imageOne,
     imageTwo,
-    imageThree,
+    imageGal,
     imageFour,
     infoBox,
     infoBoxTwo,
@@ -64,7 +64,14 @@ const AboutMe = () => {
           <Text>{infoBoxThree.paragraphTwo}</Text>
         </div>
         <div className={style.imageThree}>
-          <ImageSquare src={imageThree.src} alt={imageThree.alt} pos={65} />
+          <ImageSquare
+            src={imageGal.imageOne.src}
+            alt={imageGal.imageOne.alt}
+          />
+          <ImageSquare
+            src={imageGal.imageTwo.src}
+            alt={imageGal.imageTwo.alt}
+          />
         </div>
       </section>
       {/* ==== */}

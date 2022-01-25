@@ -31,9 +31,15 @@ export const data = {
       "So ist Petite Coaching Hamburg ein Herzensprojekt, mit dem ich Sie und Ihr Kind dabei unterstütze, ein erfülltes Familienleben zu führen: durch mehr Achtsamkeit, echte Wertschätzung, Freude und Leichtigkeit, sowie durch eine individuelle Frühförderung und Familiencoaching.",
   },
 
-  imageThree: {
-    src: "/images/teresa-jaeger-about-me-four.jpg",
-    alt: "Pädagogin, B.A. transdisziplinäre Frühförderin und Gründerin von Petite Coaching",
+  imageGal: {
+    imageOne: {
+      src: "/images/teresa-jaeger-about-me-four.jpg",
+      alt: "Pädagogin, B.A. transdisziplinäre Frühförderin und Gründerin von Petite Coaching",
+    },
+    imageTwo: {
+      src: "/images/theresa-jaeger-about-me-three.jpg",
+      alt: "Pädagogin, B.A. transdisziplinäre Frühförderin und Gründerin von Petite Coaching",
+    },
   },
 
   infoBoxThree: {
