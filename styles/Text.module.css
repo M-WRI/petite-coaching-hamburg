@@ -3,3 +3,34 @@
   line-height: 1.6;
   font-weight: 200;
 }
+
+.highlight {
+  display: inline-block;
+  position: relative;
+}
+
+.wordWrapper {
+  display: inline-block;
+  position: relative;
+  margin: 0 2px;
+}
+
+.word {
+  position: relative;
+  z-index: 1;
+}
+
+.phrase {
+  display: inline;
+  margin: 0 2px;
+  z-index: 2;
+}
+
+.line {
+  bottom: 5px;
+  transform: translateX(-6%);
+  width: 116%;
+  height: 6px;
+  background-color: var(--bg-orange);
+  position: absolute;
+}

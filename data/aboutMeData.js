@@ -67,7 +67,7 @@ export const data = {
     paragraphOne:
       "Mit großer Leidenschaft darf ich also nun schon seit vielen Jahren so wertvolle Erfahrungen in der Arbeit mit Kleinkindern und jungen Familien machen und mein fachliches Wissen mit Ihnen teilen.",
     paragraphTwo:
-      "Petite Coaching Hamburg steht für ein exzellentes Gesamtkonzept der Frühförderung: eine wertschätzende Haltung zum Kind, die partnerschaftliche Kommunikation mit dir, sowie der Einsatz von zertifiziertem, entwicklungsförderndem Spielmaterial.",
+      "Petite Coaching Hamburg steht für ein exzellentes Gesamtkonzept der Frühförderung: eine wertschätzende Haltung zum Kind, die partnerschaftliche Kommunikation mit Ihnen, sowie der Einsatz von zertifiziertem, entwicklungsförderndem Spielmaterial.",
     paragraphThree:
       "Auf eine gemeinsame Reise mit Ihnen und Ihren Kindern freue ich mich sehr.",
   },

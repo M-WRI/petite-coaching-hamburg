@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { data } from "../data/contactData";
 
 import Link from "next/link";
@@ -11,7 +12,69 @@ import {
 // style
 import style from "../styles/Kontakt.module.css";
 
+const regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
+
 const ContactForm = () => {
+  const [formData, setFormData] = useState({});
+  const [message, setMessage] = useState({ mes: "", state: false });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleOnSubmit = async (e) => {
+    e.preventDefault();
+    if (!formData.name || formData.name === "") {
+      return setMessage({
+        mes: "Bitte nennen Sie mir ihren Namen",
+        state: false,
+      });
+    }
+    if (
+      (!formData.email || formData.email === "") &&
+      (!formData.phone || formData.phone === "")
+    ) {
+      return setMessage({
+        mes: "Bitte nennen Sie mir ihre Telefonnummer oder Email, damit ich sie erreichen kann.",
+      });
+    }
+
+    if (formData.email) {
+      if (!regex.test(formData.email))
+        return setMessage({
+          mes: "Bitte tippen Sie eine gültige Emailadresse ein",
+          state: false,
+        });
+    }
+    if (!formData.reason) {
+      setFormData({
+        ...formData,
+        reason: "Keine Angabe ob Frühförderung oder Familiencoaching",
+        state: false,
+      });
+    }
+
+    if (!formData.message || formData.message === "") {
+      return setMessage({
+        mes: "Bitte schreiben Sie eine Nachricht",
+        state: false,
+      });
+    }
+
+    setMessage({
+      mes: "Die Nachricht wurde erfolgreich versendet!",
+      state: true,
+    });
+
+    fetch("api/contactForm", {
+      method: "post",
+      body: JSON.stringify(formData),
+    });
+  };
+
   return (
     <section className={style.container}>
       <h2>
@@ -22,26 +85,52 @@ const ContactForm = () => {
 
       <div className={style.wrapper}>
         <div className={style.formContainer}>
-          <form>
-            <input className={style.input} type="text" placeholder="Name" />
+          <form method="post" onSubmit={handleOnSubmit}>
+            <input
+              onChange={(e) => handleChange(e)}
+              className={style.input}
+              name="name"
+              type="text"
+              placeholder="Name"
+            />
             <div className={style.inputWrapper}>
-              <input className={style.input} type="text" placeholder="Email" />
+              <input
+                className={style.input}
+                type="text"
+                placeholder="Email"
+                name="email"
+                onChange={(e) => handleChange(e)}
+              />
               <input
                 className={style.input}
                 type="text"
                 placeholder="Telefon"
+                name="phone"
+                onChange={(e) => handleChange(e)}
               />
             </div>
             <div className={style.controlGroup}>
               <label className={`${style.control} ${style.controlRadio}`}>
                 Frühförderung
-                <input type="radio" name="radio" value="frühförderung" />
+                <input
+                  type="radio"
+                  name="reason"
+                  value="frühförderung"
+                  checked={formData.reason === "frühförderung"}
+                  onChange={(e) => handleChange(e)}
+                />
                 <div className={style.controlIndicator}></div>
               </label>
 
               <label className={`${style.control} ${style.controlRadio}`}>
                 Familiencoaching
-                <input type="radio" name="radio" value="familiencoaching" />
+                <input
+                  type="radio"
+                  name="reason"
+                  value="familiencoaching"
+                  checked={formData.reason === "familiencoaching"}
+                  onChange={(e) => handleChange(e)}
+                />
                 <div className={style.controlIndicator}></div>
               </label>
             </div>
@@ -49,10 +138,13 @@ const ContactForm = () => {
               className={style.textarea}
               rows="1"
               placeholder="Nachricht..."
+              name="message"
+              onChange={(e) => handleChange(e)}
             ></textarea>
             <button className={style.button} type="submit">
               Senden
             </button>
+            {message && <p>{message.mes}</p>}
           </form>
         </div>
         <div className={style.contactContainer}>

@@ -11,7 +11,7 @@ export const data = {
   LandingSection: {
     title: "Familiencoaching",
     introText:
-      "Das schönste Wunder der Welt kann uns auch mal vor die größten Herausforderungen stellen. Ich möchte Sie dabei begleiten, die Freude am Elternsein (wieder) zu finden und die Leichtigkeit in Ihr Familienleben zurückzubringen.",
+      "*+Das schönste Wunder der Welt* kann uns auch mal vor die größten Herausforderungen stellen. Ich möchte Sie dabei begleiten, die *+Freude am Elternsein* (wieder) zu finden und die *+Leichtigkeit in Ihr Familienleben zurückzubringen.*",
     imageOne: {
       src: "/images/familiencoaching-image-one.jpg",
       alt: "frühförderung für babys und kleinkinder",
@@ -25,7 +25,7 @@ export const data = {
 
   sectionThree: {
     infoBox: {
-      text: "Auch besondere Herausforderungen, auffälliges Verhalten in der Kita oder zu Hause können wir in einem individuellen Coaching bearbeiten. Ein Coaching hilft Ihnen dabei, wenn Sie wieder zu Ihrer elterlichen Intuition zurückfinden wollen. Raus aus dem Ratgeber-Dschungel hin zu individueller Beratung und Coaching. Sind Sie bereit, ein erfülltes Familienleben zu führen und wirklich im Einklang mit Ihrem Kind zu sein? Ich freue mich darauf, Ihre kleinen Schätze und Sie kennenzulernen. Get in Touch für ein kostenloses und unverbindliches Erstgespräch ",
+      text: "Auch besondere Herausforderungen, auffälliges Verhalten in der Kita oder zu Hause können wir in einem individuellen Coaching bearbeiten. Ein Coaching hilft Ihnen dabei, wenn Sie wieder zu Ihrer elterlichen Intuition zurückfinden wollen. Raus aus dem Ratgeber-Dschungel hin zu individueller Beratung und Coaching. Sind Sie bereit, ein erfülltes Familienleben zu führen und wirklich im Einklang mit Ihrem Kind zu sein? Ich freue mich darauf, Ihre kleinen Schätze und Sie kennenzulernen.",
     },
     imageTwo: {
       src: "/images/Teresa-256.jpg",

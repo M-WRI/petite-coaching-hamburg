@@ -23,16 +23,22 @@ function MyApp({ Component, pageProps }) {
           rel="preload"
           href="/fonts/Callingstone/Callingstone.ttf"
           as="font"
+          type="font/ttf"
+          crossOrigin
         />
         <link
           rel="preload"
           href="/fonts/Callingstone/Callingstone.woff"
           as="font"
+          type="font/woff"
+          crossOrigin
         />
         <link
           rel="preload"
           href="/fonts/Callingstone/Callingstone.woff2"
           as="font"
+          type="font/woff2"
+          crossOrigin
         />
       </Head>
       <Background>
