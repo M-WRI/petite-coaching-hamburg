@@ -24,21 +24,21 @@ function MyApp({ Component, pageProps }) {
           href="/fonts/Callingstone/Callingstone.ttf"
           as="font"
           type="font/ttf"
-          crossOrigin
+          crossOrigin="true"
         />
         <link
           rel="preload"
           href="/fonts/Callingstone/Callingstone.woff"
           as="font"
           type="font/woff"
-          crossOrigin
+          crossOrigin="true"
         />
         <link
           rel="preload"
           href="/fonts/Callingstone/Callingstone.woff2"
           as="font"
           type="font/woff2"
-          crossOrigin
+          crossOrigin="true"
         />
       </Head>
       <Background>
@@ -46,7 +46,7 @@ function MyApp({ Component, pageProps }) {
         <main>
           <Component {...pageProps} />
         </main>
-        {path !== "kontakt" && <Footer />}
+        {(path !== "kontakt" || path !== "dsgvo") && <Footer />}
       </Background>
     </>
   );

@@ -67,7 +67,9 @@ const InfoBoxSquare = ({ color = "orange", title = "", text = "", data }) => {
               </div>
             )}
             <div className={style.textWrapper}>
-              <Text center={true}>{text}</Text>
+              <Text bgCol={color} center={true}>
+                {text}
+              </Text>
             </div>
           </>
         )}

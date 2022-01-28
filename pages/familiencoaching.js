@@ -5,7 +5,6 @@ import { data, meta } from "../data/familyCoachingData";
 import ImageSquare from "../components/utils/ImageSquare";
 import Headline from "../components/utils/Headline";
 import Text from "../components/utils/Text";
-import InfoBox from "../components/utils/InfoBox";
 import InfoBoxSquare from "../components/utils/InfoBoxSquare";
 import SEO from "../components/SEO";
 
@@ -36,13 +35,31 @@ const fruehfoerderung = () => {
           <Text center={true}>{data.LandingSection.introText}</Text>
         </div>
       </section>
-      <section className={style.sectionTwoContainer}>
-        <InfoBox
-          color="blue"
-          title={data.sectionTwo.title}
-          text={data.sectionTwo.text}
-          wordbreak={true}
-        />
+      <section className={style.sectionTwoContainerFam}>
+        <div className={style.serviceWrapper}>
+          <div className={style.square}></div>
+          <h3>Kindliches Verhalten & Entwicklung</h3>
+        </div>
+
+        <div className={style.serviceWrapper}>
+          <div className={style.square}></div>
+          <h3>Ein- & Durchschlafen</h3>
+        </div>
+
+        <div className={style.serviceWrapper}>
+          <div className={style.square}></div>
+          <h3>Vermehrtes Weinen</h3>
+        </div>
+
+        <div className={style.serviceWrapper}>
+          <div className={style.square}></div>
+          <h3>Strukturen im Familienalltag</h3>
+        </div>
+
+        <div className={style.serviceWrapper}>
+          <div className={style.square}></div>
+          <h3>Bindung & Bedürfnisorientierung</h3>
+        </div>
       </section>
       <section className={style.sectionThreeContainer}>
         <div className={style.sectionThreeInfoBox}>

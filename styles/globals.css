@@ -72,3 +72,37 @@ a {
   width: 100%;
   position: relative;
 }
+
+/* COLOR */
+.blue:before {
+  content: "";
+  bottom: 0px;
+  left: -2px;
+  right: -2px;
+  height: 6px;
+  background-color: lightskyblue;
+  position: absolute;
+  z-index: -1;
+}
+
+.orange:before {
+  content: "";
+  bottom: 0px;
+  left: -2px;
+  right: -2px;
+  height: 6px;
+  background-color: lightskyblue;
+  position: absolute;
+  z-index: -1;
+}
+
+.undefined:before {
+  content: "";
+  bottom: 0px;
+  left: -2px;
+  right: -2px;
+  height: 6px;
+  background-color: var(--bg-orange);
+  position: absolute;
+  z-index: -1;
+}
