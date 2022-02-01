@@ -28,7 +28,7 @@ export const data = {
     paragraphOne:
       "in Ihren unterschiedlichen kleinen Persönlichkeiten, ihrer Neugier und Begeisterungsfähigkeit für die kleinen Dinge, sowie der Toleranz für Vielfalt und Einzigartigkeit bereichern sie doch unser Leben.",
     paragraphTwo:
-      "So ist Petite Coaching Hamburg ein Herzensprojekt, mit dem ich Sie und Ihr Kind dabei unterstütze, ein erfülltes Familienleben zu führen: durch mehr Achtsamkeit, echte Wertschätzung, Freude und Leichtigkeit, sowie durch eine individuelle Frühförderung und Familiencoaching.",
+      "So ist *+Petite Coaching Hamburg* ein Herzensprojekt, mit dem ich Sie und Ihr Kind dabei unterstütze, ein erfülltes Familienleben zu führen: durch *+mehr Achtsamkeit, echte Wertschätzung, Freude und Leichtigkeit,* sowie durch eine *+individuelle Frühförderung und Familiencoaching.*",
   },
 
   imageGal: {
@@ -44,9 +44,9 @@ export const data = {
 
   infoBoxThree: {
     paragraphOne:
-      "Ich bin selbst ehemaliges Frühförderkind. Was sich meine Mama damals gewünscht hat? Echtes Verständnis. Ein Gegenüber, das ihr zuhört. Ein Gegenüber, das die Probleme und Verzweiflung ernst nimmt. Ein Gegenüber, das sagt: „Es ist nicht Ihre Schuld.“ Und ein Gegenüber, das dann mit Fachwissen und Herzlichkeit Wegbegleiter ist, wenn das Familienleben auf wackeligen Füßen steht und die Sorge um das eigene Kind groß ist.",
+      "Ich bin selbst ehemaliges Frühförderkind. Was sich meine Mama damals gewünscht hat? *+Echtes Verständnis*. Ein Gegenüber, das ihr zuhört. Ein Gegenüber, das die Probleme und Verzweiflung ernst nimmt. Ein Gegenüber, das sagt: *+„Es ist nicht Ihre Schuld.“* Und ein Gegenüber, das dann mit Fachwissen und Herzlichkeit Wegbegleiter ist, wenn das *+Familienleben auf wackeligen Füßen* steht und die *+Sorge um das eigene Kind* groß ist.",
     paragraphTwo:
-      "Nun möchte ich Frühförderung und Familiencoaching auf eine neue, zeitgemäße Ebene bringen. Angepasst an einen modernen Lifestyle, mit viel Liebe zum Detail und auch digital auf dem neuesten Stand. Mein pädagogisches Wissen von fachlich bester Qualität ist dabei unerlässlich.",
+      "Nun möchte ich *+Frühförderung und Familiencoaching* auf eine neue, zeitgemäße Ebene bringen. Angepasst an einen *+modernen Lifestyle*, mit viel *+Liebe zum Detail* und auch *+digital auf dem neuesten Stand.* Mein *+pädagogisches Wissen von fachlich bester Qualität* ist dabei unerlässlich.",
   },
 
   infoBoxFour: {
@@ -55,7 +55,7 @@ export const data = {
       text: "– Johann Wolfgang von Goethe",
     },
     paragraphOne:
-      "Nach meiner Ausbildung zur Erzieherin, welche ich am wunderschönen Bodensee abschließen durfte, führte mein Weg zum Tor zur Welt – nach Hamburg. Durch mein Bachelorstudium in Transdisziplinärer Frühförderung und meine mehrjährigen Erfahrungen mit Kitas, Frühförderstellen und Familien wuchs der Wunsch, meine eigenen Visionen in der pädagogischen Arbeit zu verwirklichen.",
+      "Nach meiner *+Ausbildung zur Erzieherin*, welche ich am wunderschönen Bodensee abschließen durfte, führte mein Weg zum Tor zur Welt – nach Hamburg. Durch mein *+Bachelorstudium in Transdisziplinärer Frühförderung* und meine *+mehrjährigen Erfahrungen mit Kitas, Frühförderstellen und Familien* wuchs der Wunsch, meine eigenen Visionen in der pädagogischen Arbeit zu verwirklichen.",
   },
 
   imageFour: {

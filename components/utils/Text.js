@@ -1,7 +1,7 @@
 // style
 import style from "../../styles/Text.module.css";
 
-const Text = ({ children, center, bgCol }) => {
+const Text = ({ children, center, bgCol = "standard-col" }) => {
   const arr = children.split("*");
 
   return (

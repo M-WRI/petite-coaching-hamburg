@@ -70,6 +70,7 @@ a {
 .imageSquare {
   height: 100%;
   width: 100%;
+  overflow: hidden;
   position: relative;
 }
 
@@ -96,7 +97,7 @@ a {
   z-index: -1;
 }
 
-.undefined:before {
+.standard-col:before {
   content: "";
   bottom: 0px;
   left: -2px;

@@ -4,6 +4,7 @@ mail.setApiKey(process.env.EMAIL_API_KEY);
 
 export default async function (req, res) {
   const body = JSON.parse(req.body);
+
   try {
     const message = `
     Vielen dank für Ihre nachricht.\r\n 
