@@ -10,6 +10,7 @@ const Headline = ({
   primary = true,
   subHead = "",
   wordbreak = false,
+  type = "",
 }) => {
   const { ref, inView } = useInView({
     threshold: 0.5,
@@ -24,6 +25,14 @@ const Headline = ({
       },
     }),
 
+    charII: (i) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+        delay: 1 + (i + 1) * 0.05,
+      },
+    }),
+
     subHead: (i) => ({
       opacity: 1,
       transition: {
@@ -33,10 +42,14 @@ const Headline = ({
   };
 
   const animationControl = useAnimation();
+  const animationControlII = useAnimation();
 
   useEffect(() => {
-    if (inView) animationControl.start("char");
-  }, [inView, animationControl]);
+    if (inView) {
+      animationControl.start("char");
+      animationControlII.start("charII");
+    }
+  }, [inView, animationControl, animationControlII]);
 
   return (
     <>
@@ -48,7 +61,9 @@ const Headline = ({
                 key={i}
                 custom={i}
                 initial={{ opacity: 0, y: "50%" }}
-                animate={animationControl}
+                animate={
+                  type === "partII" ? animationControlII : animationControl
+                }
                 variants={animation}
                 className={style.char}
               >

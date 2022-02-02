@@ -10,6 +10,7 @@ export const meta = {
 export const data = {
   landingSection: {
     headline: "Petite Coaching",
+    headlineII: "Hamburg",
     subHead: "Frühförderung  & Familiencoaching",
     landingImage: {
       src: "/images/petite-coaching-landing-image.jpg",

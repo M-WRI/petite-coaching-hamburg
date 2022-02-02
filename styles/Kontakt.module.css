@@ -25,6 +25,10 @@
   width: 100%;
 }
 
+.formContainer form {
+  position: relative;
+}
+
 .input {
   width: 100%;
   border: none;
@@ -212,6 +216,38 @@
   color: #000;
   transition: all 0.5s;
 }
+
+.message {
+  font-size: 0.8rem;
+  color: #7b7b7b;
+  text-align: center;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dsgvoContainer {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.radio {
+  width: 30px;
+  height: 30px;
+  background: #cccccc;
+  margin-right: 1rem;
+}
+
+.radioActive {
+  background: var(--bg-orange);
+}
+
+.dsgvoLink {
+  text-decoration: underline;
+}
+
 /* ======= */
 /* ======= */
 /* ======= */

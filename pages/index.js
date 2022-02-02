@@ -28,8 +28,9 @@ export default function Home() {
       />
       <section className={style.landingContainer}>
         <div className={style.headContainer}>
-          <Headline subHead={landingSection.subHead}>
-            {landingSection.headline}
+          <Headline>{landingSection.headline}</Headline>
+          <Headline type="partII" subHead={landingSection.subHead}>
+            {landingSection.headlineII}
           </Headline>
         </div>
         <div className={style.landingCoverImageContainer}>

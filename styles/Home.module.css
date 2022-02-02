@@ -4,7 +4,7 @@
   height: 100vh;
   display: grid;
   justify-items: center;
-  align-items: center;
+  margin-top: 100px;
 }
 
 .landingCoverImageContainer {
@@ -15,6 +15,10 @@
   transform: translateY(20%);
   position: relative;
   z-index: 1;
+}
+
+.headContainer h1:first-child {
+  margin: 0;
 }
 
 @media (max-width: 485px) {

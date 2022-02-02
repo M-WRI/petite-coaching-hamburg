@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { data } from "../data/contactData";
 
 import Link from "next/link";
@@ -17,12 +17,17 @@ const regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
 const ContactForm = () => {
   const [formData, setFormData] = useState({});
   const [message, setMessage] = useState({ mes: "", state: false });
+  const [dsgvo, setDsgvo] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
+  };
+
+  const handleDsgvo = () => {
+    setDsgvo(!dsgvo);
   };
 
   const handleOnSubmit = async (e) => {
@@ -64,16 +69,39 @@ const ContactForm = () => {
       });
     }
 
-    setMessage({
-      mes: "Die Nachricht wurde erfolgreich versendet!",
-      state: true,
-    });
+    try {
+      setMessage({
+        mes: "Die Nachricht wurde erfolgreich versendet!",
+        state: true,
+      });
 
-    fetch("api/contactForm", {
-      method: "post",
-      body: JSON.stringify(formData),
-    });
+      fetch("api/contactForm", {
+        method: "post",
+        body: JSON.stringify(formData),
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        reason: "",
+        message: "",
+      });
+
+      setDsgvo(false);
+    } catch (err) {
+      console.log(err);
+    }
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      setMessage({
+        mes: "",
+        state: false,
+      });
+    }, 5000);
+  }, [message.mes]);
 
   return (
     <section className={style.container}>
@@ -115,8 +143,8 @@ const ContactForm = () => {
                 <input
                   type="radio"
                   name="reason"
-                  value="frühförderung"
-                  checked={formData.reason === "frühförderung"}
+                  value="Frühförderung"
+                  checked={formData.reason === "Frühförderung"}
                   onChange={(e) => handleChange(e)}
                 />
                 <div className={style.controlIndicator}></div>
@@ -127,8 +155,8 @@ const ContactForm = () => {
                 <input
                   type="radio"
                   name="reason"
-                  value="familiencoaching"
-                  checked={formData.reason === "familiencoaching"}
+                  value="Familiencoaching"
+                  checked={formData.reason === "Familiencoaching"}
                   onChange={(e) => handleChange(e)}
                 />
                 <div className={style.controlIndicator}></div>
@@ -141,10 +169,25 @@ const ContactForm = () => {
               name="message"
               onChange={(e) => handleChange(e)}
             ></textarea>
-            <button className={style.button} type="submit">
+            <div className={style.dsgvoContainer}>
+              <div
+                className={`${style.radio} ${dsgvo && style.radioActive}`}
+                onClick={handleDsgvo}
+              ></div>
+              <p>
+                Bitte bestätigen sie mit der
+                <Link href="/dsgvo">
+                  <a>
+                    <span className={style.dsgvoLink}> DSGVO </span>
+                  </a>
+                </Link>
+                einverstanden sind
+              </p>
+            </div>
+            <button className={style.button} type="submit" disabled={!dsgvo}>
               Senden
             </button>
-            {message && <p>{message.mes}</p>}
+            {message && <p className={style.message}>{message.mes}</p>}
           </form>
         </div>
         <div className={style.contactContainer}>
