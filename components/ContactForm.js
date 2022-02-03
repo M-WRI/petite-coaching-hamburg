@@ -239,6 +239,11 @@ const ContactForm = () => {
           </div>
         </div>
       </div>
+      <div>
+        <Link href="/impressum">
+          <a></a>
+        </Link>
+      </div>
     </section>
   );
 };

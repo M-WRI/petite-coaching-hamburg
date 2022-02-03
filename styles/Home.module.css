@@ -22,8 +22,12 @@
 }
 
 @media (max-width: 485px) {
+  .landingContainer {
+    margin-top: 50%;
+  }
+
   .headContainer {
-    transform: translateY(60%);
+    transform: translateY(30%);
   }
 }
 
