@@ -6,7 +6,13 @@ import { useEffect } from "react";
 // style
 import style from "../../styles/InfoBoxSquare.module.css";
 
-const InfoBoxSquare = ({ color = "orange", title = "", text = "", data }) => {
+const InfoBoxSquare = ({
+  color = "orange",
+  title = "",
+  text = "",
+  data,
+  headType = "",
+}) => {
   const { ref, inView } = useInView({
     threshold: 0.4,
   });
@@ -63,7 +69,7 @@ const InfoBoxSquare = ({ color = "orange", title = "", text = "", data }) => {
           <>
             {title && (
               <div className={style.headWrapper}>
-                <h2 className={style.head}>{title}</h2>
+                <h2 className={`${style.head} ${headType}`}>{title}</h2>
               </div>
             )}
             <div className={style.textWrapper}>

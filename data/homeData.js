@@ -30,25 +30,6 @@ export const data = {
       title: "Frühförderung",
       text: "Jedes Kind entwickelt sich einzigartig. Wir entwickeln eine einzigartige Förderung",
     },
-    // infoBox: [
-    //   {
-    //     id: 1,
-    //     question: "Für wen?",
-    //     answer:
-    //       "inder ab der Geburt bis zum dritten Lebensjahr. Mit und ohne Behinderung oder Entwicklungsverzögerung. Eltern, die Beratungsbedarf haben",
-    //   },
-    //   {
-    //     id: 2,
-    //     question: "Kostenloses Erstgespräch",
-    //     answer: "Beratung, Bedarfsanalyse, Förderziele ",
-    //   },
-    //   {
-    //     id: 3,
-    //     question: "Frühförderung & Beratung",
-    //     answer:
-    //       "60 Min körperliche & seelische Förderung für Ihr Kind, Beratung & wertvolle Tipps für Sie",
-    //   },
-    // ],
   },
   sectionThree: {
     links: [
@@ -59,10 +40,6 @@ export const data = {
         img: "/images/Teresa-248.jpg",
       },
     ],
-    // infoBox: {
-    //   title: "Meine Expertise",
-    //   text: "Ich arbeite nach den neusten wissenschaftlichen Erkenntnissen zum Thema frühkindliche Entwicklung und Förderung. Lernen ist ein lebenslanger Prozess – daher bilde ich mich regelmäßig weiter und lerne täglich dazu. Je nach Bedarf setze ich auf das wertvolle Know-How anderer ExpertInnen und gehe in Kooperation – z.B. mit Ihrer Kita, KinderarztIn, TherapeutIn, Hebamme.",
-    // },
     infoBox: [
       {
         id: 1,
