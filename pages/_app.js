@@ -13,15 +13,16 @@ function MyApp({ Component, pageProps }) {
     <>
       <Script
         strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=UA-220483828-1`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GANALYT}`}
       />
-      <Script id="script" strategy="lazyOnload">
+      <Script id="google-analytics-id" strategy="lazyOnload">
         {`
            window.dataLayer = window.dataLayer || [];
            function gtag(){dataLayer.push(arguments);}
            gtag('js', new Date());
-         
-           gtag('config', 'UA-220483828-1');
+           gtag('config', '${process.env.GANALYT}', {
+            page_path: window.location.pathname,
+           });
         `}
       </Script>
       <Head>
