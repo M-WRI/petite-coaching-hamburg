@@ -4,12 +4,26 @@ import Background from "../components/Background";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
+import Script from "next/script";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const path = router.pathname.split("/")[1];
   return (
     <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=UA-220483828-1`}
+      />
+      <Script id="script" strategy="lazyOnload">
+        {`
+           window.dataLayer = window.dataLayer || [];
+           function gtag(){dataLayer.push(arguments);}
+           gtag('js', new Date());
+         
+           gtag('config', 'UA-220483828-1');
+        `}
+      </Script>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
