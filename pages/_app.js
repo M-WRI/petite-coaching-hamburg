@@ -1,14 +1,30 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
-import Background from "../components/Background";
+import Script from "next/script";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import "../styles/globals.css";
-import Script from "next/script";
+// import Script from "next/script";
+import * as ga from "../googleAnalytics";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
   const path = router.pathname.split("/")[1];
+
+  console.log(path);
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      ga.pageview(url);
+    };
+
+    router.events.on("routerChangeComplete", handleRouteChange);
+    return () => {
+      router.events.off("routerChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <>
       <Head>
@@ -42,29 +58,22 @@ function MyApp({ Component, pageProps }) {
           crossOrigin="true"
         />
       </Head>
-      <Background>
-        <Navbar />
-        <main>
-          <>
-            <Script
-              strategy="lazyOnload"
-              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-            />
-            <Script id="google-analytics" strategy="lazyOnload">
-              {`
+      <Navbar />
+      <Script
+        strategy="afterInteractive"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
 
                 gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
               `}
-            </Script>
-
-            <Component {...pageProps} />
-          </>
-        </main>
-        {(path !== "kontakt" || path !== "dsgvo") && <Footer />}
-      </Background>
+      </Script>
+      <Component {...pageProps} />
+      {path === "kontakt" || path === "dsgvo" ? null : <Footer />}
     </>
   );
 }

@@ -10,6 +10,7 @@ import SEO from "../components/SEO";
 
 // style
 import style from "../styles/ProductPage.module.css";
+import Script from "next/script";
 
 const fruehfoerderung = () => {
   const { title, description, link, img, imgTwitter } = meta;

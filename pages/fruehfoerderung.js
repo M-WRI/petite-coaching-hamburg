@@ -40,12 +40,6 @@ const fruehfoerderung = () => {
       <section
         className={`${style.sectionTwoContainer} ${style.sectionTwoContainerEarly}`}
       >
-        {/* <InfoBox
-          color="blue"
-          title={data.sectionTwo.title}
-          text={data.sectionTwo.text}
-          wordbreak={true}
-        /> */}
         <div>
           <div>
             <h3>Für wen?</h3>

@@ -10,6 +10,7 @@ import SEO from "../components/SEO";
 
 // style
 import style from "../styles/AboutMe.module.css";
+import Script from "next/script";
 
 const AboutMe = () => {
   const {
