@@ -36,7 +36,6 @@ export default async function (req, res) {
     const transport = nodemailer.createTransport(authConfig);
 
     // Create the email options and body
-    // ('email': user's email and 'name': is the e-book the user wants to receive)
     const mailOptions = {
       from: `${CLIENT_EMAIL}`,
       to: body.email,
