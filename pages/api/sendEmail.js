@@ -39,7 +39,7 @@ export default async function (req, res) {
     const mailOptions = {
       from: `${CLIENT_EMAIL}`,
       to: body.email,
-      subject: `${body.name} – ${body.reason}`,
+      subject: ` – ${body.reason}`,
       text: `${body.message}`,
     };
 
