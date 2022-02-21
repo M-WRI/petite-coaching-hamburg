@@ -4,8 +4,6 @@ const { google } = require("googleapis");
 export default async function (req, res) {
   const body = JSON.parse(req.body);
 
-  console.log(body, "<------ new body");
-
   const CLIENT_EMAIL = process.env.CLIENT_EMAIL; //your email from where you'll be sending emails to users
   const CLIENT_ID = process.env.CLIENT_ID; // Client ID generated on Google console cloud
   const CLIENT_SECRET = process.env.CLIENT_SECRET; // Client SECRET generated on Google console cloud
