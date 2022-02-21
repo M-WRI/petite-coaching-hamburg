@@ -75,7 +75,7 @@ const ContactForm = () => {
         state: true,
       });
 
-      fetch("api/contactForm", {
+      fetch("api/sendEmail", {
         method: "post",
         body: JSON.stringify(formData),
       });
