@@ -4,11 +4,11 @@ const { google } = require("googleapis");
 export default async function (req, res) {
   const body = JSON.parse(req.body);
 
-  const CLIENT_EMAIL = process.env.CLIENT_EMAIL; //your email from where you'll be sending emails to users
-  const CLIENT_ID = process.env.CLIENT_ID; // Client ID generated on Google console cloud
-  const CLIENT_SECRET = process.env.CLIENT_SECRET; // Client SECRET generated on Google console cloud
-  const REDIRECT_URI = process.env.REDIRECT_URI; // The OAuth2 server (playground)
-  const REFRESH_TOKEN = process.env.REFRESH_TOKEN; // The refreshToken we got from the the OAuth2 playground
+  const CLIENT_EMAIL = process.env.CLIENT_EMAIL;
+  const CLIENT_ID = process.env.CLIENT_ID;
+  const CLIENT_SECRET = process.env.CLIENT_SECRET;
+  const REDIRECT_URI = process.env.REDIRECT_URI;
+  const REFRESH_TOKEN = process.env.REFRESH_TOKEN;
 
   const OAuth2Client = new google.auth.OAuth2(
     CLIENT_ID,
@@ -22,15 +22,18 @@ export default async function (req, res) {
     // Generate the accessToken on the fly
     const accessToken = await OAuth2Client.getAccessToken();
 
-    // Create the email envelope (transport)
-    const transport = nodemailer.createTransport({
+    // Account authentication config
+    const authConfig = {
       type: "OAuth2",
       user: CLIENT_EMAIL,
       clientId: CLIENT_ID,
       clientSecret: CLIENT_SECRET,
       refreshToken: REFRESH_TOKEN,
       accessToken: accessToken,
-    });
+    };
+
+    // Create the email envelope (transport)
+    const transport = nodemailer.createTransport(authConfig);
 
     // Create the email options and body
     // ('email': user's email and 'name': is the e-book the user wants to receive)
@@ -41,8 +44,9 @@ export default async function (req, res) {
       text: `${body.message}`,
     };
 
-    const result = await transport.sendMail(mailOptions);
-    return result;
+    await transport.sendMail(mailOptions);
+    // const result = await
+    // return result;
   } catch (error) {
     console.log(error);
   }

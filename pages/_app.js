@@ -11,20 +11,6 @@ function MyApp({ Component, pageProps }) {
   const path = router.pathname.split("/")[1];
   return (
     <>
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GANALYT}`}
-      />
-      <Script id="google-analytics-id" strategy="lazyOnload">
-        {`
-           window.dataLayer = window.dataLayer || [];
-           function gtag(){dataLayer.push(arguments);}
-           gtag('js', new Date());
-           gtag('config', '${process.env.GANALYT}', {
-            page_path: window.location.pathname,
-           });
-        `}
-      </Script>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
@@ -59,7 +45,23 @@ function MyApp({ Component, pageProps }) {
       <Background>
         <Navbar />
         <main>
-          <Component {...pageProps} />
+          <>
+            <Script
+              strategy="lazyOnload"
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+            />
+            <Script id="google-analytics" strategy="lazyOnload">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+              `}
+            </Script>
+
+            <Component {...pageProps} />
+          </>
         </main>
         {(path !== "kontakt" || path !== "dsgvo") && <Footer />}
       </Background>
